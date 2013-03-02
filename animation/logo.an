@@ -1,0 +1,92 @@
+{
+
+	"PubChromeFrameInstallerPrompt":"none",
+	"PubUseChromeFrameInstaller":"true",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+            \"ElementKeyframes\": {\
+                \"${_Ellipse2}\": [], \
+                \"${_left_socket}\": [], \
+                \"${_left_eyeball}\": [], \
+                \"${_right_eyeball}\": [], \
+                \"${_left_eyeballCopy}\": [], \
+                \"${_Ellipse}\": [], \
+                \"${_symbole-eyeless}\": [], \
+                \"${_Stage}\": [], \
+                \"${_EllipseCopy}\": [], \
+                \"${_right_socket}\": [], \
+                \"${_face}\": []\
+            }\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Down-level\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+            \"ElementKeyframes\": {\
+                \"${symbolSelector}\": []\
+            }\
+      }\
+   }}\
+}",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"expanded:images/":"false",
+	"viewStartMs":"-25",
+	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"HTMLFileName":"logo.html",
+	"symbol_stage":{
+		"dummyStageParentWidth":"150px",
+		"element_${_right_eyeball}":{
+			"timelineColor2":"0x326a96",
+			"timelineColor3":"0x385063",
+			"timelineColor":"0x2f73ad",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"true"},
+		"dummyStageParentHeight":"200px",
+		"element_${_left_eyeball}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"timelineColor":"0x00a096",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"true"},
+		"element_${_left_socket}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"timelineColor":"0x50bd82",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"true"},
+		"defaultStageParentHeight":"200px",
+		"element_${_face}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767",
+			"locked":"false",
+			"timelineTreeOpened":"false"},
+		"defaultStageParentWidth":"150px",
+		"element_${_right_socket}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"timelineColor":"0x00bda4",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"true"},
+		"element_${_Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"}},
+	"TransitionIdCounter":"70",
+	"CompZoomFactor":"100",
+	"StageZoomFactor":"100",
+	"pixelsPerMs":"0.2",
+	"PubStaticHTMLContent":"true",
+	"pref__general__AutoKeyframeProperties":"true",
+	"stage-Default Timeline_mark_ms":"-1",
+	"nextElementColorIndex":"7",
+	"pref__general__GenerateSmoothTransitions":"true",
+	"viewStartY":"0",
+	"usedBOM":"false",
+	"stage-Default Timeline_playhead_ms":"4321"}

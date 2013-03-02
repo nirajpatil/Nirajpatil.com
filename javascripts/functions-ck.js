@@ -1,0 +1,2 @@
+/* Niraj Patil - Functions
+-------------------------------------------------------- */$(window).load(function(){$('a[rel="external"]').bind("click",function(e){e.preventDefault();window.open($(this).attr("href"))});$("#page-sparkart .group").waypoint(function(e){$(".galaxy .ring").removeClass("fade-to-white");$(".galaxy .ring").addClass("fade-to-black")});$("#page-sparkart .masthead").waypoint(function(e){$(".galaxy .ring").removeClass("fade-to-black");$(".galaxy .ring").addClass("fade-to-white")})});
