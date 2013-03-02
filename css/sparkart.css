@@ -1,0 +1,237 @@
+/* Niraj - Sparkart Page
+-------------------------------------------------------- */
+/* Niraj Patil - Mixins
+-------------------------------------------------------- */
+/* Grid */
+/* Images */
+/* Reset */
+/* Background Transition */
+/* Fade Out Transition */
+/* Clearfix */
+/* Breakpoints */
+/* Typography */
+.quote {
+  font-size: 0.9em;
+  line-height: 1.3em;
+  font-weight: normal; }
+
+.navigation {
+  font-size: 0.9em;
+  line-height: 1.3em; }
+
+.aside {
+  font-size: 0.8em;
+  line-height: 1.2em; }
+
+.intro > p {
+  font-family: "ff-meta-web-pro", Georgia, serif;
+  font-size: 1.125em;
+  line-height: 1.685em;
+  text-align: left;
+  margin: 0 0 1.5em 0;
+  padding: 0; }
+  .intro > p:last-child {
+    margin-bottom: 6em; }
+  @media only screen and (min-width: 320px) and (max-width: 460px) {
+    .intro > p {
+      font-size: 1em;
+      line-height: 1.5em; }
+      .intro > p:last-child {
+        margin-bottom: 3em; } }
+
+/* Niraj - Colors
+-------------------------------------------------------- */
+/* Niraj Patil - Mixins
+-------------------------------------------------------- */
+/* Grid */
+/* Images */
+/* Reset */
+/* Background Transition */
+/* Fade Out Transition */
+/* Clearfix */
+/* Breakpoints */
+/* Typography */
+.quote {
+  font-size: 0.9em;
+  line-height: 1.3em;
+  font-weight: normal; }
+
+.navigation {
+  font-size: 0.9em;
+  line-height: 1.3em; }
+
+.aside {
+  font-size: 0.8em;
+  line-height: 1.2em; }
+
+.intro > p {
+  font-family: "ff-meta-web-pro", Georgia, serif;
+  font-size: 1.125em;
+  line-height: 1.685em;
+  text-align: left;
+  margin: 0 0 1.5em 0;
+  padding: 0; }
+  .intro > p:last-child {
+    margin-bottom: 6em; }
+  @media only screen and (min-width: 320px) and (max-width: 460px) {
+    .intro > p {
+      font-size: 1em;
+      line-height: 1.5em; }
+      .intro > p:last-child {
+        margin-bottom: 3em; } }
+
+/* Variables
+-------------------------------------------------------- */
+/* Layout */
+/* Roation Animation */
+@-webkit-keyframes orbit {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@-webkit-keyframes reverse-orbit {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(-360deg); } }
+
+/* Galaxy */
+div.galaxy {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: -4%;
+  left: -10%; }
+  @media (max-width: 949px) {
+    div.galaxy {
+      top: -22%;
+      left: -51%; } }
+  @media (max-width: 460px) {
+    div.galaxy {
+      display: none; } }
+  div.galaxy div.ring {
+    position: absolute;
+    background: #e9e9e9;
+    background-clip: padding-box;
+    border: 1px solid #dbdbdb;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit; }
+    div.galaxy div.ring.fade-to-black {
+      -webkit-transition-property: opacity;
+      -webkit-transition-duration: 0.8s, 0.8s;
+      -webkit-transition-timing-function: linear, ease-in;
+      opacity: 0; }
+    div.galaxy div.ring.fade-to-white {
+      -webkit-transition-property: opacity;
+      -webkit-transition-duration: 0.8s, 0.8s;
+      -webkit-transition-timing-function: linear, ease-in;
+      opacity: 1; }
+    div.galaxy div.ring.one {
+      width: 350px;
+      height: 350px;
+      border-radius: 350px;
+      z-index: 8;
+      top: 350px;
+      left: 600px;
+      -webkit-animation-duration: 25s; }
+      div.galaxy div.ring.one div.planet {
+        width: 120px;
+        height: 120px;
+        border-radius: 120px;
+        background: #ffd400;
+        margin-top: 0px;
+        margin-left: 5px; }
+    div.galaxy div.ring.two {
+      width: 500px;
+      height: 500px;
+      border-radius: 500px;
+      z-index: 7;
+      top: 275px;
+      left: 525px;
+      -webkit-animation-duration: 8s; }
+      div.galaxy div.ring.two div.planet {
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        background: #5640a9;
+        margin-top: 180px;
+        margin-left: 4px; }
+    div.galaxy div.ring.three {
+      width: 675px;
+      height: 675px;
+      border-radius: 675px;
+      z-index: 6;
+      top: 188px;
+      left: 437px;
+      -webkit-animation-duration: 25s; }
+      div.galaxy div.ring.three div.planet {
+        width: 24px;
+        height: 24px;
+        border-radius: 24px;
+        background: #ccc4b9;
+        margin-top: 220px;
+        margin-left: 4px; }
+    div.galaxy div.ring.four {
+      width: 875px;
+      height: 875px;
+      border-radius: 875px;
+      z-index: 5;
+      top: 85px;
+      left: 335px;
+      -webkit-animation-duration: 15s; }
+      div.galaxy div.ring.four div.planet {
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        background: #ff006c;
+        margin-top: 260px;
+        margin-left: 4px; }
+    div.galaxy div.ring.five {
+      width: 1125px;
+      height: 1125px;
+      border-radius: 1125px;
+      z-index: 4;
+      top: -25px;
+      left: 215px;
+      -webkit-animation-duration: 20s; }
+      div.galaxy div.ring.five div.planet {
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        background: #ff9600;
+        margin-top: 360px;
+        margin-left: 31px; }
+    div.galaxy div.ring.six {
+      width: 1400px;
+      height: 1400px;
+      border-radius: 1400px;
+      z-index: 3;
+      top: -155px;
+      left: 80px;
+      -webkit-animation-duration: 30s; }
+      div.galaxy div.ring.six div.planet {
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+        background: #7bc030;
+        margin-top: 400px;
+        margin-left: 56px; }
+    div.galaxy div.ring.seven {
+      width: 1650px;
+      height: 1650px;
+      border-radius: 1650px;
+      z-index: 2;
+      top: -275px;
+      left: -30px;
+      -webkit-animation-duration: 20s; }
+      div.galaxy div.ring.seven div.planet {
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        background: #27bde8;
+        margin-top: 500px;
+        margin-left: 35px; }
