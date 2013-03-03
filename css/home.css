@@ -58,9 +58,1016 @@
 /* Books */
 /* Tremor Low
 -------------------------------------------------------- */
+/*
+Animate.css - http://daneden.me/animate
+LICENSED UNDER THE  MIT LICENSE (MIT)
+
+Copyright (c) 2012 Dan Eden
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+.animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s; }
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  25%, 75% {
+    opacity: 0; } }
+
+@-moz-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  25%, 75% {
+    opacity: 0; } }
+
+@-o-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  25%, 75% {
+    opacity: 0; } }
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  25%, 75% {
+    opacity: 0; } }
+
+.flash {
+  -webkit-animation-name: flash;
+  -moz-animation-name: flash;
+  -o-animation-name: flash;
+  animation-name: flash; }
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0); }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px); }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px); } }
+
+@-moz-keyframes shake {
+  0%, 100% {
+    -moz-transform: translateX(0); }
+
+  10%, 30%, 50%, 70%, 90% {
+    -moz-transform: translateX(-10px); }
+
+  20%, 40%, 60%, 80% {
+    -moz-transform: translateX(10px); } }
+
+@-o-keyframes shake {
+  0%, 100% {
+    -o-transform: translateX(0); }
+
+  10%, 30%, 50%, 70%, 90% {
+    -o-transform: translateX(-10px); }
+
+  20%, 40%, 60%, 80% {
+    -o-transform: translateX(10px); } }
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0); }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px); }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px); } }
+
+.shake {
+  -webkit-animation-name: shake;
+  -moz-animation-name: shake;
+  -o-animation-name: shake;
+  animation-name: shake; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0); }
+
+  40% {
+    -webkit-transform: translateY(-30px); }
+
+  60% {
+    -webkit-transform: translateY(-15px); } }
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0); }
+
+  40% {
+    -moz-transform: translateY(-30px); }
+
+  60% {
+    -moz-transform: translateY(-15px); } }
+
+@-o-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -o-transform: translateY(0); }
+
+  40% {
+    -o-transform: translateY(-30px); }
+
+  60% {
+    -o-transform: translateY(-15px); } }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+
+  40% {
+    transform: translateY(-30px); }
+
+  60% {
+    transform: translateY(-15px); } }
+
+.bounce {
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1); }
+
+  50% {
+    -webkit-transform: scale(1.1); }
+
+  100% {
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1); }
+
+  50% {
+    -moz-transform: scale(1.1); }
+
+  100% {
+    -moz-transform: scale(1); } }
+
+@-o-keyframes pulse {
+  0% {
+    -o-transform: scale(1); }
+
+  50% {
+    -o-transform: scale(1.1); }
+
+  100% {
+    -o-transform: scale(1); } }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+
+  50% {
+    transform: scale(1.1); }
+
+  100% {
+    transform: scale(1); } }
+
+.pulse {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -o-animation-name: pulse;
+  animation-name: pulse; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0); } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -ms-transform: translateY(0); } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0); } }
+
+@-o-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0); } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0); } }
+
+@-o-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  -moz-animation-name: fadeOut;
+  -o-animation-name: fadeOut;
+  animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px); } }
+
+@-moz-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(-20px); } }
+
+@-o-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateY(-20px); } }
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-20px); } }
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  -moz-animation-name: fadeOutUp;
+  -o-animation-name: fadeOutUp;
+  animation-name: fadeOutUp; }
+
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px); } }
+
+@-moz-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(20px); } }
+
+@-o-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateY(20px); } }
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px); } }
+
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  -moz-animation-name: fadeOutDown;
+  -o-animation-name: fadeOutDown;
+  animation-name: fadeOutDown; }
+
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px); } }
+
+@-moz-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-20px); } }
+
+@-o-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-20px); } }
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-20px); } }
+
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+  -moz-animation-name: fadeOutLeft;
+  -o-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft; }
+
+@-webkit-keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(20px); } }
+
+@-moz-keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(20px); } }
+
+@-o-keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateX(20px); } }
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    transform: translateX(20px); } }
+
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  -moz-animation-name: fadeOutRight;
+  -o-animation-name: fadeOutRight;
+  animation-name: fadeOutRight; }
+
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-200deg);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(0);
+    opacity: 1; } }
+
+@-moz-keyframes rotateIn {
+  0% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(-200deg);
+    opacity: 0; }
+
+  100% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(0);
+    opacity: 1; } }
+
+@-o-keyframes rotateIn {
+  0% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(-200deg);
+    opacity: 0; }
+
+  100% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(0);
+    opacity: 1; } }
+
+@keyframes rotateIn {
+  0% {
+    transform-origin: center center;
+    transform: rotate(-200deg);
+    opacity: 0; }
+
+  100% {
+    transform-origin: center center;
+    transform: rotate(0);
+    opacity: 1; } }
+
+.rotateIn {
+  -webkit-animation-name: rotateIn;
+  -moz-animation-name: rotateIn;
+  -o-animation-name: rotateIn;
+  animation-name: rotateIn; }
+
+@-webkit-keyframes rotateInUpLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1; } }
+
+@-moz-keyframes rotateInUpLeft {
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1; } }
+
+@-o-keyframes rotateInUpLeft {
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1; } }
+
+@keyframes rotateInUpLeft {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1; } }
+
+.rotateInUpLeft {
+  -webkit-animation-name: rotateInUpLeft;
+  -moz-animation-name: rotateInUpLeft;
+  -o-animation-name: rotateInUpLeft;
+  animation-name: rotateInUpLeft; }
+
+@-webkit-keyframes rotateInDownLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1; } }
+
+@-moz-keyframes rotateInDownLeft {
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1; } }
+
+@-o-keyframes rotateInDownLeft {
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1; } }
+
+@keyframes rotateInDownLeft {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1; } }
+
+.rotateInDownLeft {
+  -webkit-animation-name: rotateInDownLeft;
+  -moz-animation-name: rotateInDownLeft;
+  -o-animation-name: rotateInDownLeft;
+  animation-name: rotateInDownLeft; }
+
+@-webkit-keyframes rotateInUpRight {
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1; } }
+
+@-moz-keyframes rotateInUpRight {
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1; } }
+
+@-o-keyframes rotateInUpRight {
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1; } }
+
+@keyframes rotateInUpRight {
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1; } }
+
+.rotateInUpRight {
+  -webkit-animation-name: rotateInUpRight;
+  -moz-animation-name: rotateInUpRight;
+  -o-animation-name: rotateInUpRight;
+  animation-name: rotateInUpRight; }
+
+@-webkit-keyframes rotateInDownRight {
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1; } }
+
+@-moz-keyframes rotateInDownRight {
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1; } }
+
+@-o-keyframes rotateInDownRight {
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1; } }
+
+@keyframes rotateInDownRight {
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1; } }
+
+.rotateInDownRight {
+  -webkit-animation-name: rotateInDownRight;
+  -moz-animation-name: rotateInDownRight;
+  -o-animation-name: rotateInDownRight;
+  animation-name: rotateInDownRight; }
+
+@-webkit-keyframes rotateOut {
+  0% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(200deg);
+    opacity: 0; } }
+
+@-moz-keyframes rotateOut {
+  0% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(200deg);
+    opacity: 0; } }
+
+@-o-keyframes rotateOut {
+  0% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(200deg);
+    opacity: 0; } }
+
+@keyframes rotateOut {
+  0% {
+    transform-origin: center center;
+    transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    transform-origin: center center;
+    transform: rotate(200deg);
+    opacity: 0; } }
+
+.rotateOut {
+  -webkit-animation-name: rotateOut;
+  -moz-animation-name: rotateOut;
+  -o-animation-name: rotateOut;
+  animation-name: rotateOut; }
+
 /* Niraj Patil - Fanciness
 -------------------------------------------------------- */
-/* Roation Animation
+/* Logo
+-------------------------------------------------------- */
+@-webkit-keyframes dip {
+  0%, 100% {
+    -webkit-transform: translateY(0); }
+
+  20% {
+    -webkit-transform: translateY(30px); } }
+
+@-moz-keyframes bounce {
+  0%, 100% {
+    -moz-transform: translateY(0); }
+
+  20% {
+    -webkit-transform: translateY(30px); } }
+
+@-o-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -o-transform: translateY(0); }
+
+  20% {
+    -webkit-transform: translateY(30px); } }
+
+@keyframes dip {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+
+  20% {
+    -webkit-transform: translateY(30px); } }
+
+.dip {
+  -webkit-animation-name: dip;
+  -moz-animation-name: dip;
+  -o-animation-name: dip;
+  animation-name: dip; }
+
+/* Man Made It / Stars Fall
+-------------------------------------------------------- */
+@-webkit-keyframes drop {
+  0%, 100% {
+    -webkit-transform: translateY(0); }
+
+  10% {
+    -webkit-transform: translateY(-400px); }
+
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+.drop {
+  -webkit-animation-name: drop;
+  -moz-animation-name: drop;
+  -o-animation-name: drop;
+  animation-name: drop; }
+
+/* Man Made It / Stars Fall
+-------------------------------------------------------- */
+@-webkit-keyframes rise {
+  0%, 100% {
+    -webkit-transform: translateY(0); }
+
+  20% {
+    -webkit-transform: translateY(30px); }
+
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+.rise {
+  -webkit-animation-name: rise;
+  -moz-animation-name: rise;
+  -o-animation-name: rise;
+  animation-name: rise; }
+
+/* Redbox / Tickets Fade In
+-------------------------------------------------------- */
+@-webkit-keyframes fall {
+  0%, 50% {
+    -webkit-transform: translateY(0); }
+
+  10% {
+    -webkit-transform: translateY(-30px); }
+
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+.fall {
+  -webkit-animation-name: fall;
+  -moz-animation-name: fall;
+  -o-animation-name: fall;
+  animation-name: fall; }
+
+/* Sparkart / Vortex Rotation
 -------------------------------------------------------- */
 @-webkit-keyframes orbit {
   from {
@@ -76,8 +1083,6 @@
   to {
     -webkit-transform: rotate(-360deg); } }
 
-/* Sparkart
--------------------------------------------------------- */
 .vortex {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -163,33 +1168,64 @@ a {
         /* on retina, use image that's scaled by 2 */
         background-image: url("goldengate@2x.png");
         background-size: 3000px 166px; } }
-    .manmadeit .sky .star {
-      background: #2b5466;
-      position: absolute; }
-      .manmadeit .sky .star.father {
-        top: 200px;
-        left: 150px;
-        width: 15px;
-        height: 15px;
-        border-radius: 14px; }
-      .manmadeit .sky .star.mother {
-        top: 250px;
-        right: 150px;
-        width: 10px;
-        height: 10px;
-        border-radius: 10px; }
-      .manmadeit .sky .star.son {
-        top: 500px;
-        right: 205px;
-        width: 5px;
-        height: 5px;
-        border-radius: 5px; }
-      .manmadeit .sky .star.pet {
-        top: 400px;
-        left: 600px;
-        width: 3px;
-        height: 3px;
-        border-radius: 3px; }
+    .manmadeit .sky .stars {
+      opacity: 0; }
+      .manmadeit .sky .stars .star {
+        position: absolute; }
+        .manmadeit .sky .stars .star.father.flash {
+          width: 15px;
+          height: 15px;
+          border-radius: 14px;
+          -webkit-animation-duration: 5s;
+          -webkit-animation-iteration-count: infinite; }
+        .manmadeit .sky .stars .star.mother.flash {
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          -webkit-animation-duration: 4s;
+          -webkit-animation-iteration-count: infinite; }
+        .manmadeit .sky .stars .star.son.flash {
+          width: 5px;
+          height: 5px;
+          border-radius: 5px;
+          -webkit-animation-duration: 10s;
+          -webkit-animation-iteration-count: infinite; }
+        .manmadeit .sky .stars .star.pet.flash {
+          width: 3px;
+          height: 3px;
+          border-radius: 3px;
+          -webkit-animation-duration: 2s;
+          -webkit-animation-iteration-count: infinite; }
+      .manmadeit .sky .stars.front .star {
+        background: #2b5466; }
+        .manmadeit .sky .stars.front .star.father.flash {
+          top: 200px;
+          left: 150px;
+          -webkit-animation-duration: 10s;
+          -webkit-animation-iteration-count: infinite; }
+        .manmadeit .sky .stars.front .star.mother {
+          top: 200px;
+          right: 150px; }
+        .manmadeit .sky .stars.front .star.son {
+          top: 350px;
+          right: 450px; }
+        .manmadeit .sky .stars.front .star.pet {
+          top: 100px;
+          right: 200px; }
+      .manmadeit .sky .stars.back .star {
+        background: #498fae; }
+        .manmadeit .sky .stars.back .star.father {
+          top: 20px;
+          left: 300px; }
+        .manmadeit .sky .stars.back .star.mother {
+          top: 300px;
+          right: 600px; }
+        .manmadeit .sky .stars.back .star.son {
+          top: 400px;
+          right: 750px; }
+        .manmadeit .sky .stars.back .star.pet {
+          top: 200px;
+          left: 900px; }
     .manmadeit .sky .notes {
       float: left;
       margin-top: 150px; }
@@ -210,18 +1246,6 @@ a {
           /* on retina, use image that's scaled by 2 */
           background-image: url("zeppelin@2x.png");
           background-size: 358px 90px; } }
-    .manmadeit .sky .goldengate {
-      clear: both;
-      width: 1500px;
-      height: 88px;
-      display: block;
-      background: url("../images/work/manmadeit/goldengate.png") no-repeat;
-      text-indent: -5000px; }
-      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        .manmadeit .sky .goldengate {
-          /* on retina, use image that's scaled by 2 */
-          background-image: url("goldengate@2x.png");
-          background-size: 3000px 166px; } }
   .manmadeit .water {
     width: 100%;
     height: 215px;
@@ -271,33 +1295,35 @@ a {
   z-index: 3;
   margin-top: -45px;
   overflow: hidden; }
-  .redbox .ticket.top {
-    margin-top: -190px;
-    height: 419px;
-    background: url("../images/work/redbox/tickets-top.png") no-repeat top center; }
-    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-      .redbox .ticket.top {
-        /* on retina, use image that's scaled by 2 */
-        background-image: url("tickets-top@2x.png");
-        background-size: 2914px 838px; } }
-  .redbox .ticket.middle {
-    margin-top: -172px;
-    height: 478px;
-    background: url("../images/work/redbox/tickets-middle.png") no-repeat top center; }
-    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-      .redbox .ticket.middle {
-        /* on retina, use image that's scaled by 2 */
-        background-image: url("tickets-middle@2x.png");
-        background-size: 2914px 956px; } }
-  .redbox .ticket.bottom {
-    margin: -202px 0 0 0;
-    height: 451px;
-    background: url("../images/work/redbox/tickets-bottom.png") no-repeat top center; }
-    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-      .redbox .ticket.bottom {
-        /* on retina, use image that's scaled by 2 */
-        background-image: url("tickets-bottom@2x.png");
-        background-size: 1934px 902px; } }
+  .redbox .ticket {
+    opacity: 0; }
+    .redbox .ticket.top {
+      margin-top: -190px;
+      height: 419px;
+      background: url("../images/work/redbox/tickets-top.png") no-repeat top center; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        .redbox .ticket.top {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("tickets-top@2x.png");
+          background-size: 2914px 838px; } }
+    .redbox .ticket.middle {
+      margin-top: -172px;
+      height: 478px;
+      background: url("../images/work/redbox/tickets-middle.png") no-repeat top center; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        .redbox .ticket.middle {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("tickets-middle@2x.png");
+          background-size: 2914px 956px; } }
+    .redbox .ticket.bottom {
+      margin: -202px 0 0 0;
+      height: 451px;
+      background: url("../images/work/redbox/tickets-bottom.png") no-repeat top center; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        .redbox .ticket.bottom {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("tickets-bottom@2x.png");
+          background-size: 1934px 902px; } }
   .redbox .content .kiosk {
     display: block;
     float: left;

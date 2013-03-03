@@ -2,7 +2,91 @@
 -------------------------------------------------------- */
 
 
-/* Roation Animation
+
+/* Logo
+-------------------------------------------------------- */
+
+@-webkit-keyframes dip {
+	0%, 100% {-webkit-transform: translateY(0);}
+	20% {-webkit-transform: translateY(30px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 100% {-moz-transform: translateY(0);}
+	20% {-webkit-transform: translateY(30px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	20% {-webkit-transform: translateY(30px);}
+}
+
+@keyframes dip {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	20% {-webkit-transform: translateY(30px);}
+}
+
+.dip {
+	-webkit-animation-name: dip;
+	-moz-animation-name: dip;
+	-o-animation-name: dip;
+	animation-name: dip;
+}
+
+/* Man Made It / Stars Fall
+-------------------------------------------------------- */
+
+@-webkit-keyframes drop {
+	0%, 100% {-webkit-transform: translateY(0);}
+	10% {-webkit-transform: translateY(-400px);}
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.drop {
+	-webkit-animation-name: drop;
+	-moz-animation-name: drop;
+	-o-animation-name: drop;
+	animation-name: drop;
+}
+
+
+/* Man Made It / Stars Fall
+-------------------------------------------------------- */
+
+@-webkit-keyframes rise {
+	0%, 100% {-webkit-transform: translateY(0);}
+	20% {-webkit-transform: translateY(30px);}
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.rise {
+	-webkit-animation-name: rise;
+	-moz-animation-name: rise;
+	-o-animation-name: rise;
+	animation-name: rise;
+}
+
+
+/* Redbox / Tickets Fade In
+-------------------------------------------------------- */
+
+@-webkit-keyframes fall {
+	0%, 50% {-webkit-transform: translateY(0);}
+	10% {-webkit-transform: translateY(-30px);}
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.fall {
+	-webkit-animation-name: fall;
+	-moz-animation-name: fall;
+	-o-animation-name: fall;
+	animation-name: fall;
+}
+
+/* Sparkart / Vortex Rotation
 -------------------------------------------------------- */
 
 @-webkit-keyframes orbit { 
@@ -16,10 +100,6 @@
 	from { -webkit-transform:rotate(0deg) }
 	to { -webkit-transform:rotate(-360deg) } 	
 }
-
-
-/* Sparkart
--------------------------------------------------------- */
 
 .vortex {
 	-webkit-animation-iteration-count:infinite;
