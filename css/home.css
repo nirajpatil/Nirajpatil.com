@@ -41,136 +41,319 @@
       .intro > p:last-child {
         margin-bottom: 3em; } }
 
-/* Niraj - Colors
+/* Niraj Patil - Colors
 -------------------------------------------------------- */
 /* Base
 -------------------------------------------------------- */
 /* Man Made It
 -------------------------------------------------------- */
-/* Content
+/* Redbox Tickets
 -------------------------------------------------------- */
-.content {
-  width: 900px;
-  margin: 0 auto; }
+/* Sparkart
+-------------------------------------------------------- */
+/* Issues App
+-------------------------------------------------------- */
+/* Books */
+/* Tremor Low
+-------------------------------------------------------- */
+/* Niraj Patil - Fanciness
+-------------------------------------------------------- */
+/* Roation Animation
+-------------------------------------------------------- */
+@-webkit-keyframes orbit {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@-webkit-keyframes reverse-orbit {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(-360deg); } }
+
+/* Sparkart
+-------------------------------------------------------- */
+.vortex {
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: orbit;
+  -webkit-animation-duration: 25s; }
+
+/* Containers
+-------------------------------------------------------- */
+body {
+  overflow-x: hidden; }
+
+section {
+  position: relative;
+  height: 800px; }
+  section .content {
+    width: 900px;
+    margin: 0 auto; }
 
 /* Notes
 -------------------------------------------------------- */
 .notes {
-  width: 300px; }
+  width: 300px;
+  position: relative;
+  z-index: 5; }
   .notes h3 {
-    font: bold 18px/21px Helvetica, Arial, sans-serif; }
+    font: bold 18px/21px Helvetica, Arial, sans-serif;
+    margin-bottom: 5px; }
   .notes p {
     font: normal 14px/21px Georgia, serif; }
   .notes small {
     font: normal 11px/21px Georgia, serif; }
 
+/* Hello
+-------------------------------------------------------- */
+.hello {
+  height: 110px; }
+  .hello .header {
+    width: 900px;
+    margin: 0 auto; }
+    .hello .header .logo {
+      float: left;
+      margin-right: 15px;
+      width: 64px;
+      height: 110px;
+      display: block;
+      text-indent: -5000px;
+      background: url("../images/layout/logo.png") no-repeat; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        .hello .header .logo {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("logo@2x.png");
+          background-size: 128px 220px; } }
+    .hello .header h1 {
+      font: bold 18px/21px Helvetica, Arial, sans-serif; }
+    .hello .header p {
+      font: normal 14px/21px Georgia, serif;
+      margin-bottom: 10px; }
+
 /* Man Made It
 -------------------------------------------------------- */
-.sky {
-  width: 100%;
-  height: 570px;
-  background-color: #282220;
-  clear: both;
-  background-image: url("../images/work/manmadeit/goldengate.png");
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  position: relative; }
-  @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-    .sky {
-      /* on retina, use image that's scaled by 2 */
-      background-image: url("goldengate@2x.png");
-      background-size: 3000px 166px; } }
-  .sky .star {
-    background: #2b5466; }
-    .sky .star.father {
-      width: 14px;
-      height: 14px;
-      border-radius: 14px; }
-    .sky .star.mother {
-      width: 10px;
-      height: 10px;
-      border-radius: 10px; }
-    .sky .star.son {
-      width: 7px;
-      height: 7px;
-      border-radius: 7px; }
-    .sky .star.foetus {
-      width: 4px;
-      height: 4px;
-      border-radius: 4px; }
-    .sky .star.pet {
-      width: 2px;
-      height: 2px;
-      border-radius: 2px; }
-  .sky .notes {
-    float: left;
-    margin-top: 150px; }
-    .sky .notes h3, .sky .notes p {
-      color: #ffffff; }
-    .sky .notes small {
-      color: #2b5466; }
-  .sky .zeppelin {
-    float: right;
-    width: 179px;
-    height: 45px;
-    display: block;
-    background: url("../images/work/manmadeit/zeppelin.png") no-repeat;
-    text-indent: -5000px;
-    margin-top: 150px; }
-    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-      .sky .zeppelin {
-        /* on retina, use image that's scaled by 2 */
-        background-image: url("zeppelin@2x.png");
-        background-size: 358px 90px; } }
-  .sky .goldengate {
+.manmadeit {
+  z-index: 5; }
+  .manmadeit .sky {
+    width: 100%;
+    height: 570px;
+    background-color: #282220;
     clear: both;
-    width: 1500px;
-    height: 88px;
-    display: block;
-    background: url("../images/work/manmadeit/goldengate.png") no-repeat;
-    text-indent: -5000px; }
+    background-image: url("../images/work/manmadeit/goldengate.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    position: relative; }
     @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-      .sky .goldengate {
+      .manmadeit .sky {
         /* on retina, use image that's scaled by 2 */
         background-image: url("goldengate@2x.png");
         background-size: 3000px 166px; } }
+    .manmadeit .sky .star {
+      background: #2b5466;
+      position: absolute; }
+      .manmadeit .sky .star.father {
+        top: 200px;
+        left: 150px;
+        width: 15px;
+        height: 15px;
+        border-radius: 14px; }
+      .manmadeit .sky .star.mother {
+        top: 250px;
+        right: 150px;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px; }
+      .manmadeit .sky .star.son {
+        top: 500px;
+        right: 205px;
+        width: 5px;
+        height: 5px;
+        border-radius: 5px; }
+      .manmadeit .sky .star.pet {
+        top: 400px;
+        left: 600px;
+        width: 3px;
+        height: 3px;
+        border-radius: 3px; }
+    .manmadeit .sky .notes {
+      float: left;
+      margin-top: 150px; }
+      .manmadeit .sky .notes h3, .manmadeit .sky .notes p {
+        color: #ffffff; }
+      .manmadeit .sky .notes small {
+        color: #2b5466; }
+    .manmadeit .sky .zeppelin {
+      float: right;
+      width: 179px;
+      height: 45px;
+      display: block;
+      background: url("../images/work/manmadeit/zeppelin.png") no-repeat;
+      text-indent: -5000px;
+      margin-top: 150px; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        .manmadeit .sky .zeppelin {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("zeppelin@2x.png");
+          background-size: 358px 90px; } }
+    .manmadeit .sky .goldengate {
+      clear: both;
+      width: 1500px;
+      height: 88px;
+      display: block;
+      background: url("../images/work/manmadeit/goldengate.png") no-repeat;
+      text-indent: -5000px; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        .manmadeit .sky .goldengate {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("goldengate@2x.png");
+          background-size: 3000px 166px; } }
+  .manmadeit .water {
+    width: 100%;
+    height: 215px;
+    padding-top: 15px;
+    background-image: url("../images/work/manmadeit/water.png");
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    position: relative; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .manmadeit .water {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("water@2x.png");
+        background-size: 136px 460px; } }
+    .manmadeit .water .wave {
+      height: 9px;
+      display: block;
+      margin: 0 auto 15px; }
+      .manmadeit .water .wave.father {
+        width: 291px;
+        background: url("../images/work/manmadeit/wave-father.png") no-repeat; }
+        @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+          .manmadeit .water .wave.father {
+            /* on retina, use image that's scaled by 2 */
+            background-image: url("wave-father@2x.png");
+            background-size: 582px 18px; } }
+      .manmadeit .water .wave.mother {
+        width: 147px;
+        background: url("../images/work/manmadeit/wave-mother.png") no-repeat; }
+        @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+          .manmadeit .water .wave.mother {
+            /* on retina, use image that's scaled by 2 */
+            background-image: url("wave-mother@2x.png");
+            background-size: 294px 18px; } }
+      .manmadeit .water .wave.son {
+        width: 74px;
+        background: url("../images/work/manmadeit/wave-son.png") no-repeat; }
+        @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+          .manmadeit .water .wave.son {
+            /* on retina, use image that's scaled by 2 */
+            background-image: url("wave-son@2x.png");
+            background-size: 148px 18px; } }
 
-.water {
-  width: 100%;
-  height: 230px;
-  background-image: url("../images/work/manmadeit/water.png");
-  background-position: bottom center;
-  background-repeat: repeat-x;
-  position: relative; }
-  @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-    .water {
-      /* on retina, use image that's scaled by 2 */
-      background-image: url("water@2x.png");
-      background-size: 136px 460px; } }
-  .water .wave {
-    height: 9px;
-    display: block; }
-    .water .wave.father {
-      width: 291px;
-      background: url("../images/work/manmadeit/wave-father.png") no-repeat; }
+/* Redbox
+-------------------------------------------------------- */
+.redbox {
+  background: #91f7f1;
+  z-index: 3;
+  margin-top: -45px;
+  overflow: hidden; }
+  .redbox .ticket.top {
+    margin-top: -190px;
+    height: 419px;
+    background: url("../images/work/redbox/tickets-top.png") no-repeat top center; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .redbox .ticket.top {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("tickets-top@2x.png");
+        background-size: 2914px 838px; } }
+  .redbox .ticket.middle {
+    margin-top: -172px;
+    height: 478px;
+    background: url("../images/work/redbox/tickets-middle.png") no-repeat top center; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .redbox .ticket.middle {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("tickets-middle@2x.png");
+        background-size: 2914px 956px; } }
+  .redbox .ticket.bottom {
+    margin: -202px 0 0 0;
+    height: 451px;
+    background: url("../images/work/redbox/tickets-bottom.png") no-repeat top center; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .redbox .ticket.bottom {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("tickets-bottom@2x.png");
+        background-size: 1934px 902px; } }
+  .redbox .content .kiosk {
+    display: block;
+    float: left;
+    margin: -630px 15px 0 213px;
+    width: 148px;
+    height: 232px;
+    background: url("../images/work/redbox/kiosk.png") no-repeat; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .redbox .content .kiosk {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("kiosk@2x.png");
+        background-size: 296px 454px; } }
+  .redbox .content .notes {
+    margin: -600px 0 0 380px;
+    float: left; }
+
+/* Sparkart
+-------------------------------------------------------- */
+.sparkart {
+  background: #ffce00;
+  z-index: 4; }
+  .sparkart .vortex {
+    float: left;
+    margin: 220px 0 0 210px;
+    width: 360px;
+    height: 360px;
+    background: url("../images/work/sparkart/vortex.png") no-repeat; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .sparkart .vortex {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("vortex@2x.png");
+        background-size: 720px 720px; } }
+  .sparkart .notes {
+    float: right;
+    margin-top: 300px; }
+
+/* Issues App
+-------------------------------------------------------- */
+.issues {
+  background: #90d18a;
+  position: relative;
+  z-index: 3; }
+  .issues .content {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    z-index: 9; }
+    .issues .content .iphone {
+      float: left;
+      margin-top: 150px;
+      width: 323px;
+      height: 632px;
+      background: url("../images/work/issues/issues.png") no-repeat; }
       @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        .water .wave.father {
+        .issues .content .iphone {
           /* on retina, use image that's scaled by 2 */
-          background-image: url("wave-father@2x.png");
-          background-size: 582px 18px; } }
-    .water .wave.mother {
-      width: 147px;
-      background: url("../images/work/manmadeit/wave-mother.png") no-repeat; }
-      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        .water .wave.mother {
-          /* on retina, use image that's scaled by 2 */
-          background-image: url("wave-mother@2x.png");
-          background-size: 294px 18px; } }
-    .water .wave.son {
-      width: 74px;
-      background: url("../images/work/manmadeit/wave-son.png") no-repeat; }
-      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        .water .wave.son {
-          /* on retina, use image that's scaled by 2 */
-          background-image: url("wave-son@2x.png");
-          background-size: 148px 18px; } }
+          background-image: url("issues@2x.png");
+          background-size: 646px 1264px; } }
+    .issues .content .notes {
+      float: right; }
+  .issues .city {
+    width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10; }
+
+/* Tremor Low
+-------------------------------------------------------- */
+.tremorlow {
+  background: #27363f; }

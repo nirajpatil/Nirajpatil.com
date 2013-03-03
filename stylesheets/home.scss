@@ -3,25 +3,38 @@
 
 @import "mixins.scss";
 @import "colors.scss";
+@import "fanciness.scss";
 
 
-
-/* Content
+/* Containers
 -------------------------------------------------------- */
 
-.content {
-	width: 900px;
-	margin: 0 auto;
+body {
+	overflow-x: hidden;
 }
+
+section {
+	position: relative;
+	height: 800px;
+
+	.content {
+		width: 900px;
+		margin: 0 auto;
+	}
+}
+
 
 /* Notes
 -------------------------------------------------------- */
 
 .notes {
 	width: 300px;
+	position: relative;
+	z-index: 5;
 
 	h3 {
 		font: bold 18px/21px Helvetica, Arial, sans-serif;
+		margin-bottom: 5px;
 	}
 
 	p {
@@ -34,118 +47,285 @@
 }
 
 
+/* Hello
+-------------------------------------------------------- */
+
+.hello {
+	height: 110px;
+
+	.header {
+			width: 900px;
+			margin: 0 auto;
+
+		.logo {
+			float: left;
+			margin-right: 15px;
+			width: 64px;
+			height: 110px;
+			display: block;
+			text-indent: -5000px;
+			background: url("../images/layout/logo.png") no-repeat;
+			@include image-2x("logo@2x.png", 128px, 220px);
+		}
+
+		h1 {
+			font: bold 18px/21px Helvetica, Arial, sans-serif;
+		}
+
+		p {
+			font: normal 14px/21px Georgia, serif;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+
 /* Man Made It
 -------------------------------------------------------- */
 
-.sky {
-	width: 100%;
-	height: 570px;
-	background-color: $sky;
-	clear: both;
-	background-image: url("../images/work/manmadeit/goldengate.png");
-	@include image-2x("goldengate@2x.png", 3000px, 166px);
-	background-position: bottom center;
-	background-repeat: no-repeat;
-	position: relative;
+.manmadeit {
+	z-index: 5;
 
-	.star {
-		background: $star;
+	.sky {
+		width: 100%;
+		height: 570px;
+		background-color: $sky;
+		clear: both;
+		background-image: url("../images/work/manmadeit/goldengate.png");
+		@include image-2x("goldengate@2x.png", 3000px, 166px);
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		position: relative;
 
-		&.father {
-			width: 14px;
-			height: 14px;
-			border-radius: 14px;
+		.star {
+			background: $star;
+			position: absolute;
+
+			&.father {
+				top: 200px;
+				left: 150px;
+				width: 15px;
+				height: 15px;
+				border-radius: 14px;
+			}
+
+			&.mother {
+				top: 250px;
+				right: 150px;
+				width: 10px;
+				height: 10px;
+				border-radius: 10px;
+			}
+
+			&.son {
+				top: 500px;
+				right: 205px;
+				width: 5px;
+				height: 5px;
+				border-radius: 5px;
+			}
+
+			&.pet {
+				top: 400px;
+				left: 600px;
+				width: 3px;
+				height: 3px;
+				border-radius: 3px;
+			}
 		}
 
-		&.mother {
-			width: 10px;
-			height: 10px;
-			border-radius: 10px;
+		.notes {
+			float: left;
+			margin-top: 150px;
+
+			h3, p {
+				color: #ffffff;
+			}
+
+			small {
+				color: $star;
+			}
 		}
 
-		&.son {
-			width: 7px;
-			height: 7px;
-			border-radius: 7px;
+		.zeppelin {
+			float: right;
+			width: 179px;
+			height: 45px;
+			display: block;
+			background: url("../images/work/manmadeit/zeppelin.png") no-repeat;
+			@include image-2x("zeppelin@2x.png", 358px, 90px);
+			text-indent: -5000px;
+			margin-top: 150px; 
 		}
 
-		&.foetus {
-			width: 4px;
-			height: 4px;
-			border-radius: 4px;
+		.goldengate {
+			clear: both;
+			width: 1500px;
+			height: 88px;
+			display: block;
+			background: url("../images/work/manmadeit/goldengate.png") no-repeat;
+			@include image-2x("goldengate@2x.png", 3000px, 166px);
+			text-indent: -5000px;
+		}
+	}
+
+	.water {
+		width: 100%;
+		height: 215px;
+		padding-top: 15px;
+		background-image: url("../images/work/manmadeit/water.png");
+		@include image-2x("water@2x.png", 136px, 460px);
+		background-position: bottom center;
+		background-repeat: repeat-x;
+		position: relative;
+
+		.wave {
+			height: 9px;
+			display: block;
+			margin: 0 auto 15px;
+
+			&.father {
+				width: 291px;
+				background: url("../images/work/manmadeit/wave-father.png") no-repeat;
+				@include image-2x("wave-father@2x.png", 582px, 18px);
+			}
+
+			&.mother {
+				width: 147px;
+				background: url("../images/work/manmadeit/wave-mother.png") no-repeat;
+				@include image-2x("wave-mother@2x.png", 294px, 18px);
+			}
+
+			&.son {
+				width: 74px;
+				background: url("../images/work/manmadeit/wave-son.png") no-repeat;
+				@include image-2x("wave-son@2x.png", 148px, 18px);
+			}
+		}
+	}
+}
+
+/* Redbox
+-------------------------------------------------------- */
+
+.redbox {
+	background: $floor;
+	z-index: 3;
+	margin-top: -45px;
+	overflow: hidden;
+
+	.ticket {
+
+		&.top {
+			margin-top: -190px;
+			height: 419px;
+			background: url("../images/work/redbox/tickets-top.png") no-repeat top center;
+			@include image-2x("tickets-top@2x.png", 2914px, 838px);
 		}
 
-		&.pet {
-			width: 2px;
-			height: 2px;
-			border-radius: 2px;
+		&.middle {
+			margin-top: -172px;
+			height: 478px;
+			background: url("../images/work/redbox/tickets-middle.png") no-repeat top center;
+			@include image-2x("tickets-middle@2x.png", 2914px, 956px);
 		}
+
+		&.bottom {
+			margin: -202px 0 0 0;
+			height: 451px;
+			background: url("../images/work/redbox/tickets-bottom.png") no-repeat top center;
+			@include image-2x("tickets-bottom@2x.png", 1934px, 902px);
+		}
+	}
+
+	.content {
+
+		.kiosk {
+			display: block;
+			float: left;
+			margin: -630px 15px 0 213px;
+			width: 148px;
+			height: 232px;
+			background: url("../images/work/redbox/kiosk.png") no-repeat;
+			@include image-2x("kiosk@2x.png", 296px, 454px);
+		}
+
+		.notes {
+			margin: -600px 0 0 380px;
+			float: left;
+		}
+	}
+}
+
+/* Sparkart
+-------------------------------------------------------- */
+
+.sparkart {
+	background: $universe;
+	z-index: 4;
+
+	.vortex {
+		float: left;
+		margin: 220px 0 0 210px;
+		width: 360px;
+		height: 360px;
+		background: url("../images/work/sparkart/vortex.png") no-repeat;
+		@include image-2x("vortex@2x.png", 720px, 720px);		
 	}
 
 	.notes {
-		float: left;
-		margin-top: 150px;
-
-		h3, p {
-			color: #ffffff;
-		}
-
-		small {
-			color: $star;
-		}
-	}
-
-	.zeppelin {
 		float: right;
-		width: 179px;
-		height: 45px;
-		display: block;
-		background: url("../images/work/manmadeit/zeppelin.png") no-repeat;
-		@include image-2x("zeppelin@2x.png", 358px, 90px);
-		text-indent: -5000px;
-		margin-top: 150px; 
-	}
-
-	.goldengate {
-		clear: both;
-		width: 1500px;
-		height: 88px;
-		display: block;
-		background: url("../images/work/manmadeit/goldengate.png") no-repeat;
-		@include image-2x("goldengate@2x.png", 3000px, 166px);
-		text-indent: -5000px;
+		margin-top: 300px;
 	}
 }
 
-.water {
-	width: 100%;
-	height: 230px;
-	background-image: url("../images/work/manmadeit/water.png");
-	@include image-2x("water@2x.png", 136px, 460px);
-	background-position: bottom center;
-	background-repeat: repeat-x;
+
+/* Issues App
+-------------------------------------------------------- */
+
+.issues {
+	background: $library;
 	position: relative;
+	z-index: 3;
 
-	.wave {
-		height: 9px;
-		display: block;
 
-		&.father {
-			width: 291px;
-			background: url("../images/work/manmadeit/wave-father.png") no-repeat;
-			@include image-2x("wave-father@2x.png", 582px, 18px);
+	.content {
+
+		height: 300px;
+		overflow: hidden;
+		position: relative;
+		z-index: 9;
+
+		.iphone {
+			float: left;
+			margin-top: 150px;
+			width: 323px;
+			height: 632px;
+			background: url("../images/work/issues/issues.png") no-repeat;
+			@include image-2x("issues@2x.png", 646px, 1264px);
+
 		}
-
-		&.mother {
-			width: 147px;
-			background: url("../images/work/manmadeit/wave-mother.png") no-repeat;
-			@include image-2x("wave-mother@2x.png", 294px, 18px);
-		}
-
-		&.son {
-			width: 74px;
-			background: url("../images/work/manmadeit/wave-son.png") no-repeat;
-			@include image-2x("wave-son@2x.png", 148px, 18px);
+		.notes {
+			float: right;
 		}
 	}
+
+	.city {
+		width: 1500px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 10;
+
+	}
 }
+
+/* Tremor Low
+-------------------------------------------------------- */
+
+.tremorlow {
+	background: $ocean;
+}
+
+
+
+
