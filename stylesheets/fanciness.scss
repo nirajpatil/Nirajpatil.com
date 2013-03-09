@@ -1,7 +1,18 @@
 /* Niraj Patil - Fanciness
 -------------------------------------------------------- */
 
-
+.animated {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+}
 
 /* Logo
 -------------------------------------------------------- */
@@ -11,12 +22,12 @@
 	20% {-webkit-transform: translateY(30px);}
 }
 
-@-moz-keyframes bounce {
+@-moz-keyframes dip {
 	0%, 100% {-moz-transform: translateY(0);}
 	20% {-webkit-transform: translateY(30px);}
 }
 
-@-o-keyframes bounce {
+@-o-keyframes dip {
 	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
 	20% {-webkit-transform: translateY(30px);}
 }
@@ -50,22 +61,34 @@
 	animation-name: drop;
 }
 
-
-/* Man Made It / Stars Fall
--------------------------------------------------------- */
-
-@-webkit-keyframes rise {
-	0%, 100% {-webkit-transform: translateY(0);}
-	20% {-webkit-transform: translateY(30px);}
-	0% {opacity: 0;}	
-	100% {opacity: 1;}
+@-webkit-keyframes flash {
+	0%, 50%, 100% {opacity: 1;}	
+	25%, 75% {opacity: 0;}
 }
 
-.rise {
-	-webkit-animation-name: rise;
-	-moz-animation-name: rise;
-	-o-animation-name: rise;
-	animation-name: rise;
+/* Man Made It / Stars Twinkle
+-------------------------------------------------------- */
+
+@-moz-keyframes flash {
+	0%, 50%, 100% {opacity: 1;}	
+	25%, 75% {opacity: 0;}
+}
+
+@-o-keyframes flash {
+	0%, 50%, 100% {opacity: 1;}	
+	25%, 75% {opacity: 0;}
+}
+
+@keyframes flash {
+	0%, 50%, 100% {opacity: 1;}	
+	25%, 75% {opacity: 0;}
+}
+
+.flash {
+	-webkit-animation-name: flash;
+	-moz-animation-name: flash;
+	-o-animation-name: flash;
+	animation-name: flash;
 }
 
 
@@ -86,7 +109,7 @@
 	animation-name: fall;
 }
 
-/* Sparkart / Vortex Rotation
+/* Sparkart / Vortex Rotates
 -------------------------------------------------------- */
 
 @-webkit-keyframes orbit { 

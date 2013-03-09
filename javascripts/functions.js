@@ -33,12 +33,6 @@ $('.logo').hover(function(){
 $('#page-home').waypoint(function() {
 	
 	$('.stars.front').addClass('animated fall');
-
-});
-
-//3. More stars fade in.
-$('#page-home .header p').waypoint(function() {
-
 	$('.stars.back').addClass('animated fall');
 
 });
