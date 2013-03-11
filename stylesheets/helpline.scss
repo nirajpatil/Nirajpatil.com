@@ -1,0 +1,104 @@
+/* Niraj Patil - Home - Layout
+-------------------------------------------------------- */
+
+@import "mixins.scss";
+@import "colors.scss";
+@import "fanciness.scss"; 
+@import "home.scss";
+ 
+
+/* Hello 
+-------------------------------------------------------- */
+
+#page-helpline .logo a {
+	background-position: 0 -110px;
+}
+
+/* Helpline Introduction
+-------------------------------------------------------- */
+
+.mission {
+	background: $floor url("../images/page-helpline/helpinghands.png") no-repeat top right;
+	@include image-2x("helpinghands@2x.png", 1750px, 1042px);
+	height: 440px;
+	padding: 40px 0;
+
+	.content {
+		padding: 0 20px;
+
+		.notes {
+			float: left;
+
+			p {
+				color: $floor-text;
+			}
+		}
+	}
+}
+
+/* Helpline
+-------------------------------------------------------- */
+
+.helpline {
+
+	height: auto;
+	background: lighten($floor, 15%);
+
+	.content {
+
+		padding: 40px 20px;
+
+		.group {
+			width: 100%;
+			
+			display: inline-block;
+			clear: both;
+			margin-bottom: 50px;
+
+			h3 {
+				margin: 0;
+				color: #ec443b;
+			}
+
+			h4 {
+				margin-bottom: 5px;
+			}
+
+			ul {
+				width: 33.33%;
+				margin: 0 0 30px 0;
+				display: block;
+				float: left;
+				padding: 0 40px 0 0;
+				list-style-type: none;
+
+				&:nth-of-type(3n+1) {
+					clear: left;
+				}
+
+				li {
+					list-style-type: none;
+					padding: 0;
+					margin: 0 0 3px 0;
+
+					&:first-child {
+						border-bottom: 1px solid $black;
+						margin-bottom: 10px;
+					}
+
+					a {
+						text-decoration: none;
+					
+						&:hover {
+							color: darken($floor, 30%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.bye {
+	clear: left;
+}

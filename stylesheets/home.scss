@@ -26,9 +26,21 @@ section {
 /* Typography
 -------------------------------------------------------- */
 
+p {
+	font: normal 14px/21px Georgia, serif;
+}
+
 a {
 	color: $black;
 	text-decoration: underline;
+}
+
+h3 {
+	font: bold 18px/21px Helvetica, Arial, sans-serif;
+}
+
+h4 {
+	font: bold 14px/21px Helvetica, Arial, sans-serif;
 }
 
 
@@ -36,17 +48,16 @@ a {
 -------------------------------------------------------- */
 
 .notes {
-	width: 300px;
 	position: relative;
 	z-index: 5;
+	float: left;
+	width: 300px;
 
 	h3 {
-		font: bold 18px/21px Helvetica, Arial, sans-serif;
 		margin: 0 0 10px;
 	}
 
 	p {
-		font: normal 14px/21px Georgia, serif;
 		margin-top: 0;
 	}
 
@@ -65,8 +76,9 @@ a {
 	.header {
 			width: 900px;
 			margin: 0 auto;
+			padding: 0 20px;
 
-		.logo {
+		.logo a {
 			float: left;
 			margin-right: 15px;
 			width: 64px;
@@ -80,6 +92,10 @@ a {
 		h1 {
 			font: bold 18px/21px Helvetica, Arial, sans-serif;
 			margin: 20px 0 0 0;
+
+			a { 
+				text-decoration: none;
+			}
 		}
 
 		p {
@@ -224,7 +240,6 @@ a {
 		}
 
 		.notes {
-			float: left;
 			margin-top: 150px;
 
 			h3, p {
@@ -333,7 +348,6 @@ a {
 
 		.notes {
 			margin: -600px 0 0 380px;
-			float: left;
 
 			p, a, small {
 				color: $floor-text;
@@ -393,7 +407,6 @@ a {
 		}
 
 		.notes {
-			float: left;
 			margin-top: 150px;
 
 			p, a, small {
@@ -432,7 +445,6 @@ a {
 	.content {
 		.notes {
 			margin-top: -300px;
-			float: left;
 
 			h3 {
 				color: $ocean-sand;
