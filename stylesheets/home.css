@@ -1,0 +1,525 @@
+/* Niraj Patil - Home
+-------------------------------------------------------- */
+/* Niraj Patil - Mixins
+-------------------------------------------------------- */
+/* Grid */
+/* Images */
+/* Reset */
+/* Background Transition */
+/* Fade Out Transition */
+/* Clearfix */
+/* Breakpoints */
+/* Retina Image-Ready Mixin 
+-------------------------------------------------------- */
+/* Typography */
+.quote {
+  font-size: 0.9em;
+  line-height: 1.3em;
+  font-weight: normal; }
+
+.navigation {
+  font-size: 0.9em;
+  line-height: 1.3em; }
+
+.aside {
+  font-size: 0.8em;
+  line-height: 1.2em; }
+
+.intro > p {
+  font-family: "ff-meta-web-pro", Georgia, serif;
+  font-size: 1.125em;
+  line-height: 1.685em;
+  text-align: left;
+  margin: 0 0 1.5em 0;
+  padding: 0; }
+  .intro > p:last-child {
+    margin-bottom: 6em; }
+  @media only screen and (min-width: 320px) and (max-width: 460px) {
+    .intro > p {
+      font-size: 1em;
+      line-height: 1.5em; }
+      .intro > p:last-child {
+        margin-bottom: 3em; } }
+
+/* Niraj Patil - Colors
+-------------------------------------------------------- */
+/* Base
+-------------------------------------------------------- */
+/* Hello
+-------------------------------------------------------- */
+/* Man Made It
+-------------------------------------------------------- */
+/* Redbox Tickets
+-------------------------------------------------------- */
+/* Sparkart
+-------------------------------------------------------- */
+/* Issues App
+-------------------------------------------------------- */
+/* Books */
+/* Tremor Low
+-------------------------------------------------------- */
+/* Niraj Patil - Fanciness
+-------------------------------------------------------- */
+.animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s; }
+
+/* Logo
+-------------------------------------------------------- */
+@-webkit-keyframes dip {
+  0%, 100% {
+    -webkit-transform: translateY(0); }
+
+  20% {
+    -webkit-transform: translateY(30px); } }
+
+@-moz-keyframes dip {
+  0%, 100% {
+    -moz-transform: translateY(0); }
+
+  20% {
+    -webkit-transform: translateY(30px); } }
+
+@-o-keyframes dip {
+  0%, 20%, 50%, 80%, 100% {
+    -o-transform: translateY(0); }
+
+  20% {
+    -webkit-transform: translateY(30px); } }
+
+@keyframes dip {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+
+  20% {
+    -webkit-transform: translateY(30px); } }
+
+.dip {
+  -webkit-animation-name: dip;
+  -moz-animation-name: dip;
+  -o-animation-name: dip;
+  animation-name: dip; }
+
+/* Man Made It / Stars Fall
+-------------------------------------------------------- */
+@-webkit-keyframes drop {
+  0%, 100% {
+    -webkit-transform: translateY(0); }
+
+  10% {
+    -webkit-transform: translateY(-400px); }
+
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+.drop {
+  -webkit-animation-name: drop;
+  -moz-animation-name: drop;
+  -o-animation-name: drop;
+  animation-name: drop; }
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  25%, 75% {
+    opacity: 0; } }
+
+/* Man Made It / Stars Twinkle
+-------------------------------------------------------- */
+@-moz-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  25%, 75% {
+    opacity: 0; } }
+
+@-o-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  25%, 75% {
+    opacity: 0; } }
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  25%, 75% {
+    opacity: 0; } }
+
+.flash {
+  -webkit-animation-name: flash;
+  -moz-animation-name: flash;
+  -o-animation-name: flash;
+  animation-name: flash; }
+
+/* Redbox / Tickets Fade In
+-------------------------------------------------------- */
+@-webkit-keyframes fall {
+  0%, 50% {
+    -webkit-transform: translateY(0); }
+
+  10% {
+    -webkit-transform: translateY(-30px); }
+
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+.fall {
+  -webkit-animation-name: fall;
+  -moz-animation-name: fall;
+  -o-animation-name: fall;
+  animation-name: fall; }
+
+/* Sparkart / Vortex Rotates
+-------------------------------------------------------- */
+@-webkit-keyframes orbit {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@-webkit-keyframes reverse-orbit {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(-360deg); } }
+
+.vortex {
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: orbit;
+  -webkit-animation-duration: 25s; }
+
+/* Section
+-------------------------------------------------------- */
+section {
+  position: relative;
+  height: 800px; }
+  section .content {
+    width: 900px;
+    margin: 0 auto; }
+
+/* Typography
+-------------------------------------------------------- */
+p {
+  font: normal 14px/21px Georgia, serif; }
+
+a {
+  color: black;
+  text-decoration: underline; }
+
+h3 {
+  font: bold 18px/21px Helvetica, Arial, sans-serif; }
+
+h4 {
+  font: bold 14px/21px Helvetica, Arial, sans-serif; }
+
+/* Notes
+-------------------------------------------------------- */
+.notes {
+  position: relative;
+  z-index: 5;
+  float: left;
+  width: 300px; }
+  .notes h3 {
+    margin: 0 0 10px; }
+  .notes p {
+    margin-top: 0; }
+  .notes small {
+    font: normal 11px/21px Georgia, serif; }
+
+/* Man Made It
+-------------------------------------------------------- */
+.manmadeit {
+  z-index: 5; }
+  .manmadeit .sky {
+    width: 100%;
+    height: 570px;
+    background-color: #282220;
+    clear: both;
+    background-image: url("../images/work/manmadeit/goldengate.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    position: relative; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .manmadeit .sky {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("goldengate@2x.png");
+        background-size: 3000px 166px; } }
+    .manmadeit .sky .stars {
+      opacity: 0; }
+      .manmadeit .sky .stars .star {
+        position: absolute;
+        -webkit-animation-iteration-count: infinite; }
+        .manmadeit .sky .stars .star.father.flash {
+          width: 10px;
+          height: 10px;
+          border-radius: 10px; }
+        .manmadeit .sky .stars .star.mother.flash {
+          width: 10px;
+          height: 10px;
+          border-radius: 10px; }
+        .manmadeit .sky .stars .star.son.flash {
+          width: 5px;
+          height: 5px;
+          border-radius: 5px; }
+        .manmadeit .sky .stars .star.daughter.flash {
+          width: 3px;
+          height: 3px;
+          border-radius: 3px; }
+        .manmadeit .sky .stars .star.pet.flash {
+          width: 3px;
+          height: 3px;
+          border-radius: 3px; }
+      .manmadeit .sky .stars.front .star {
+        background: #2b5466; }
+        .manmadeit .sky .stars.front .star.father.flash {
+          top: 475px;
+          left: 800px;
+          -webkit-animation-duration: 15s; }
+        .manmadeit .sky .stars.front .star.mother.flash {
+          top: 200px;
+          right: 150px;
+          -webkit-animation-duration: 5s; }
+        .manmadeit .sky .stars.front .star.son.flash {
+          top: 350px;
+          right: 450px;
+          -webkit-animation-duration: 8s; }
+        .manmadeit .sky .stars.front .star.daughter.flash {
+          top: 350px;
+          right: 450px;
+          -webkit-animation-duration: 8s; }
+        .manmadeit .sky .stars.front .star.pet.flash {
+          top: 100px;
+          left: 400px;
+          -webkit-animation-duration: 10s; }
+      .manmadeit .sky .stars.back .star {
+        background: #498fae; }
+        .manmadeit .sky .stars.back .star.father.flash {
+          top: 20px;
+          left: 300px;
+          -webkit-animation-duration: 5s; }
+        .manmadeit .sky .stars.back .star.mother.flash {
+          top: 300px;
+          right: 600px;
+          -webkit-animation-duration: 8s; }
+        .manmadeit .sky .stars.back .star.son.flash {
+          top: 400px;
+          right: 750px;
+          -webkit-animation-duration: 5s; }
+        .manmadeit .sky .stars.back .star.daughter.flash {
+          top: 350px;
+          right: 450px;
+          -webkit-animation-duration: 8s; }
+        .manmadeit .sky .stars.back .star.pet.flash {
+          top: 150px;
+          left: 900px;
+          -webkit-animation-duration: 15s; }
+    .manmadeit .sky .notes {
+      margin-top: 150px; }
+      .manmadeit .sky .notes h3, .manmadeit .sky .notes p {
+        color: #ffffff; }
+      .manmadeit .sky .notes p, .manmadeit .sky .notes a, .manmadeit .sky .notes small {
+        color: #589bb9; }
+    .manmadeit .sky .zeppelin {
+      float: right;
+      width: 179px;
+      height: 45px;
+      display: block;
+      background: url("../images/work/manmadeit/zeppelin.png") no-repeat;
+      text-indent: -5000px;
+      margin: 200px 100px 0 0; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        .manmadeit .sky .zeppelin {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("zeppelin@2x.png");
+          background-size: 358px 90px; } }
+  .manmadeit .water {
+    width: 100%;
+    height: 215px;
+    padding-top: 15px;
+    background-image: url("../images/work/manmadeit/water.png");
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    position: relative; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .manmadeit .water {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("water@2x.png");
+        background-size: 136px 460px; } }
+    .manmadeit .water .wave {
+      height: 9px;
+      display: block;
+      margin: 0 auto 15px; }
+      .manmadeit .water .wave.father {
+        width: 291px;
+        background: url("../images/work/manmadeit/wave-father.png") no-repeat; }
+        @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+          .manmadeit .water .wave.father {
+            /* on retina, use image that's scaled by 2 */
+            background-image: url("wave-father@2x.png");
+            background-size: 582px 18px; } }
+      .manmadeit .water .wave.mother {
+        width: 147px;
+        background: url("../images/work/manmadeit/wave-mother.png") no-repeat; }
+        @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+          .manmadeit .water .wave.mother {
+            /* on retina, use image that's scaled by 2 */
+            background-image: url("wave-mother@2x.png");
+            background-size: 294px 18px; } }
+      .manmadeit .water .wave.son {
+        width: 74px;
+        background: url("../images/work/manmadeit/wave-son.png") no-repeat; }
+        @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+          .manmadeit .water .wave.son {
+            /* on retina, use image that's scaled by 2 */
+            background-image: url("wave-son@2x.png");
+            background-size: 148px 18px; } }
+
+/* Redbox
+-------------------------------------------------------- */
+.redbox {
+  background: #91f7f1;
+  z-index: 3;
+  margin-top: -45px;
+  overflow: hidden; }
+  .redbox .ticket {
+    opacity: 0; }
+    .redbox .ticket.top {
+      margin-top: -190px;
+      height: 419px;
+      background: url("../images/work/redbox/tickets-top.png") no-repeat top center; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        .redbox .ticket.top {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("tickets-top@2x.png");
+          background-size: 2914px 838px; } }
+    .redbox .ticket.middle {
+      margin-top: -172px;
+      height: 478px;
+      background: url("../images/work/redbox/tickets-middle.png") no-repeat top center; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        .redbox .ticket.middle {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("tickets-middle@2x.png");
+          background-size: 2914px 956px; } }
+    .redbox .ticket.bottom {
+      margin: -202px 0 0 0;
+      height: 451px;
+      background: url("../images/work/redbox/tickets-bottom.png") no-repeat top center; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        .redbox .ticket.bottom {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("tickets-bottom@2x.png");
+          background-size: 1934px 902px; } }
+  .redbox .content .kiosk {
+    display: block;
+    float: left;
+    margin: -630px 15px 0 213px;
+    width: 148px;
+    height: 232px;
+    background: url("../images/work/redbox/kiosk.png") no-repeat; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .redbox .content .kiosk {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("kiosk@2x.png");
+        background-size: 296px 454px; } }
+  .redbox .content .notes {
+    margin: -600px 0 0 380px; }
+    .redbox .content .notes p, .redbox .content .notes a, .redbox .content .notes small {
+      color: #1a9c99; }
+
+/* Sparkart
+-------------------------------------------------------- */
+.sparkart {
+  background: #ffce00;
+  z-index: 4; }
+  .sparkart .vortex {
+    float: left;
+    margin: 220px 0 0 210px;
+    width: 360px;
+    height: 360px;
+    background: url("../images/work/sparkart/vortex.png") no-repeat; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .sparkart .vortex {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("vortex@2x.png");
+        background-size: 720px 720px; } }
+  .sparkart .notes {
+    float: right;
+    margin-top: 300px; }
+
+/* Issues
+-------------------------------------------------------- */
+.issues {
+  background: #90d18a;
+  height: 900px;
+  position: relative;
+  z-index: 3; }
+  .issues .content {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    z-index: 9; }
+    .issues .content .iphone {
+      float: left;
+      margin: 150px 15px 0 0;
+      width: 323px;
+      height: 632px;
+      background: url("../images/work/issues/issues.png") no-repeat; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        .issues .content .iphone {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("issues@2x.png");
+          background-size: 646px 1264px; } }
+    .issues .content .notes {
+      margin-top: 150px; }
+      .issues .content .notes p, .issues .content .notes a, .issues .content .notes small {
+        color: #1b7b60; }
+  .issues .city {
+    width: 1500px;
+    height: 600px;
+    overflow: hidden;
+    margin: -300px auto;
+    position: relative;
+    z-index: 10; }
+
+/* Tremor Low
+-------------------------------------------------------- */
+.tremorlow {
+  background: #27363f;
+  overflow: hidden; }
+  .tremorlow .siren {
+    margin: 0px 15px 0 500px;
+    width: 765px;
+    height: 715px;
+    background: url("../images/work/tremorlow/siren.png") no-repeat; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .tremorlow .siren {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("siren@2x.png");
+        background-size: 1530px 1430px; } }
+  .tremorlow .content .notes {
+    margin-top: -300px; }
+    .tremorlow .content .notes h3 {
+      color: #ebcec2; }
+    .tremorlow .content .notes p, .tremorlow .content .notes a, .tremorlow .content .notes small {
+      color: #00a499; }

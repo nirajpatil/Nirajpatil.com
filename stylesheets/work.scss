@@ -1,0 +1,78 @@
+
+/* Work Section - Display
+-------------------------------------------------------- */
+
+.work {
+	margin: 0 auto;
+	text-align: center;
+
+	img {
+		&.masthead { @include image(5); }
+		&.segment { @include image(4); }
+		&.type { @include image(16); }
+		&.animation { @include image(6); }
+		&.site { @include column(16); }
+
+		@include breakpoint(mother) {
+			&.masthead { @include image(5); }
+			&.segment { @include image(4); }
+			&.animation { @include image(6); }
+		}
+
+		@include breakpoint(son) {
+			&.masthead { @include image(8); }
+			&.segment { @include image(8); }
+			&.animation { @include image(8); }
+		}
+	}
+
+	.intro {
+		@include column(13);
+		@include breakpoint(mother) { @include column(14); }
+		@include breakpoint(son) { @include column(16); }
+	}
+	
+	.group {
+		@include column(16);
+		padding: 0;
+		margin-bottom: 6em;
+		float: left;
+		
+		@include breakpoint(mother) { margin-bottom: 6em; }
+		@include breakpoint(son) { float: none; margin-bottom: 0; }
+
+		.segment {
+			margin: 0 102px 0 0;  
+			float: left;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			@include breakpoint(mother) {
+				margin-right: 60px;
+			}
+			
+			@include breakpoint(son) {
+				float: none;
+				margin: 0 0 3em;
+
+				&:last-child {
+					margin: 0 0 3em 0;
+				}
+			}
+		}
+	}
+
+	.solo.segment {
+		margin: 2em auto;
+	}
+
+	.animation {
+		padding: 0;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-timing-function:linear;
+		-webkit-animation-name:orbit;
+		-webkit-animation-duration: 25s;
+	}
+}

@@ -1,17 +1,12 @@
-/* Niraj Patil - Home - Layout
+/* Niraj Patil - Home
 -------------------------------------------------------- */
 
 @import "mixins.scss";
 @import "colors.scss";
-@import "fanciness.scss"; 
+@import "fanciness.scss";
 
-/* Containers
+/* Section
 -------------------------------------------------------- */
-
-body {
-	overflow-x: hidden;
-	font: normal 14px/21px Georgia, serif;
-}
 
 section {
 	position: relative;
@@ -338,7 +333,7 @@ h4 {
 }
 
 
-/* Issues App
+/* Issues
 -------------------------------------------------------- */
 
 .issues {
@@ -415,34 +410,4 @@ h4 {
 		}
 	}
 }
-
-/* Bye
--------------------------------------------------------- */
-
-.bye {
-	height: 300px;
-	text-align: left;
-
-	h3 {
-		padding-top: 100px;
-	}
-
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-
-		a {
-			text-decoration: none;
-			color: $copy;
-
-			&:hover {
-				color: lighten($linkedin, 20%);
-			}
-
-		}
-	}
-}
- 
-
 
