@@ -1,4 +1,21 @@
 <!DOCTYPE html>
+
+<!-- 
+
+Hi there. If you're reading this, I'm already flattered. You're either really interested in how I built something, or you're facepalming at how terribly I built something. Let's begin with some facts:
+
+The site's a work-in-progress.
+The site will be responsive, just not today.
+I experiment a lot and occasionally break things.
+I know there's a shit-ton of divs. I'll clean those up soon.
+
+You: Jesus, that SVG. What are you thinking? 
+Me: I know, I know. I'm just playing around right now. I've wanted to get into Canvas and SVG for a while and still finding my way around it.
+
+Thanks for listening, and thanks for stopping by. 
+
+-->
+
 <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
@@ -20,15 +37,13 @@
 	
 	<!-- Javascripts of Justice -->
 	<script src="javascripts/jquery-1.8.2.js"></script>
-	<script src="javascripts/hashgrid.js"></script>
 	<script src="javascripts/modernizr.js"></script>
 	<script src="javascripts/waypoints.min.js"></script>
-	<script src="javascripts/functions.js"></script>	
+	<script src="javascripts/functions.js"></script>
 	
 	<!-- Stylesheets of Stability -->
 	<link rel="stylesheet" href="stylesheets/normalize.css">
-	<link rel="stylesheet" href="stylesheets/hashgrid.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="css/layout.css">
 
 </head>
 <body id="page-sparkart">
@@ -46,30 +61,28 @@
 	</div>
 
 	<div class="page">
-	
-		<div class="layout">
+
+		<!-- Header -->
+		<section class="hello">
 			
 			<div class="header">
 
-				<h1 class="logo">Niraj Patil</h1>
+				<div class="logo">Niraj Patil</div>
 
-				<p class="quote">Solve problems.<br />Make cool shit.<br />Help people &amp; <br />Have fun doing it.</p>
+				<h1>The Life &amp; Crimes Of Niraj Patil.</h1>
 
-				<ul class="navigation">
+				<nav>
+					<a href="/work">Work</a>
+					<a href="/blog">Blog</a>
+					<a href="http://nirajpatil.com/helpline">Helpline</a>
+					<a href="/about">Contact</a>
+				</nav>
 
-					<li>
+			</div>
 
-						<ul>
-							<li><a href="/sparkart.html">Sparkart</a></li>
-							<li><a href="/sparkart.html">Man Made It</a></li>
-							<li><a href="/sparkart.html">Tremor Low</a></li>
-							<li><a href="/sparkart.html">Redbox</a></li>
-						</ul>
-					</li>
-					
-				</ul>
+		</section>
 	
-			</div>	
+		<div class="layout">
 				
 			<div class="work sparkart">
 			

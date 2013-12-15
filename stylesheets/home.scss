@@ -66,47 +66,6 @@ h4 {
 	}
 }
 
-
-/* Hello
--------------------------------------------------------- */
-
-.hello {
-	height: 110px;
-
-	.header {
-			width: 900px;
-			margin: 0 auto;
-			padding: 0 20px;
-
-		.logo a {
-			float: left;
-			margin-right: 15px;
-			width: 64px;
-			height: 110px;
-			display: block;
-			text-indent: -5000px;
-			background: url("../images/layout/logo.png") no-repeat;
-			@include image-2x("logo@2x.png", 128px, 220px);
-		}
-
-		h1 {
-			font: bold 18px/21px Helvetica, Arial, sans-serif;
-			margin: 20px 0 0 0;
-
-			a { 
-				text-decoration: none;
-			}
-		}
-
-		p {
-			font: normal 14px/21px Georgia, serif;
-			margin-top: 5px;
-			float: left;
-		}
-	}
-}
-
-
 /* Man Made It
 -------------------------------------------------------- */
 
