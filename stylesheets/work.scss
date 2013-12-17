@@ -2,7 +2,28 @@
 /* Work Section - Display
 -------------------------------------------------------- */
 
-.work {
+@import "mixins.scss";
+@import "colors.scss";
+
+/* Base
+-------------------------------------------------------- */
+
+div.layout {
+	width: 100%;
+	background: #f1f1f1;
+	padding: 40px 0;
+}
+
+div.work {
+	width: 920px;
+	margin: 0 auto;		
+}
+
+
+/* Base
+-------------------------------------------------------- */
+
+div.work {
 	margin: 0 auto;
 	text-align: center;
 

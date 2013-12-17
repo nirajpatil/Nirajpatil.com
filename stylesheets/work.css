@@ -1,0 +1,209 @@
+/* Work Section - Display
+-------------------------------------------------------- */
+/* Niraj Patil - Mixins
+-------------------------------------------------------- */
+/* Grid */
+/* Images */
+/* Reset */
+/* Background Transition */
+/* Fade Out Transition */
+/* Clearfix */
+/* Breakpoints */
+/* Retina Image-Ready Mixin 
+-------------------------------------------------------- */
+/* Typography */
+.quote {
+  font-size: 0.9em;
+  line-height: 1.3em;
+  font-weight: normal; }
+
+.navigation {
+  font-size: 0.9em;
+  line-height: 1.3em; }
+
+.aside {
+  font-size: 0.8em;
+  line-height: 1.2em; }
+
+.intro > p {
+  font-family: "ff-meta-web-pro", Georgia, serif;
+  font-size: 1.125em;
+  line-height: 1.685em;
+  text-align: left;
+  margin: 0 0 1.5em 0;
+  padding: 0; }
+  .intro > p:last-child {
+    margin-bottom: 6em; }
+  @media only screen and (min-width: 320px) and (max-width: 460px) {
+    .intro > p {
+      font-size: 1em;
+      line-height: 1.5em; }
+      .intro > p:last-child {
+        margin-bottom: 3em; } }
+
+/* Niraj Patil - Color Guide
+-------------------------------------------------------- */
+/* Home
+-------------------------------------------------------- */
+/* Hello
+-------------------------------------------------------- */
+/* Man Made It
+-------------------------------------------------------- */
+/* Redbox Tickets
+-------------------------------------------------------- */
+/* Sparkart
+-------------------------------------------------------- */
+/* Issues App
+-------------------------------------------------------- */
+/* Books */
+/* Tremor Low
+-------------------------------------------------------- */
+/* Base
+-------------------------------------------------------- */
+div.layout {
+  width: 100%;
+  background: #f1f1f1;
+  padding: 40px 0; }
+
+div.work {
+  width: 920px;
+  margin: 0 auto; }
+
+/* Base
+-------------------------------------------------------- */
+div.work {
+  margin: 0 auto;
+  text-align: center; }
+  div.work img.masthead {
+    width: 31.25%;
+    padding: 0;
+    margin: 0 auto 6em 0; }
+    @media only screen and (min-width: 320px) and (max-width: 460px) {
+      div.work img.masthead {
+        margin: 0 auto 3em 0; } }
+  div.work img.segment {
+    width: 25%;
+    padding: 0;
+    margin: 0 auto 6em 0; }
+    @media only screen and (min-width: 320px) and (max-width: 460px) {
+      div.work img.segment {
+        margin: 0 auto 3em 0; } }
+  div.work img.type {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto 6em 0; }
+    @media only screen and (min-width: 320px) and (max-width: 460px) {
+      div.work img.type {
+        margin: 0 auto 3em 0; } }
+  div.work img.animation {
+    width: 37.5%;
+    padding: 0;
+    margin: 0 auto 6em 0; }
+    @media only screen and (min-width: 320px) and (max-width: 460px) {
+      div.work img.animation {
+        margin: 0 auto 3em 0; } }
+  div.work img.site {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%; }
+  @media (max-width: 949px) {
+    div.work img.masthead {
+      width: 31.25%;
+      padding: 0;
+      margin: 0 auto 6em 0; }
+    div.work img.segment {
+      width: 25%;
+      padding: 0;
+      margin: 0 auto 6em 0; }
+    div.work img.animation {
+      width: 37.5%;
+      padding: 0;
+      margin: 0 auto 6em 0; } }
+    @media only screen and (max-width: 949px) and (min-width: 320px) and (max-width: 460px) {
+      div.work img.masthead {
+        margin: 0 auto 3em 0; } }
+    @media only screen and (max-width: 949px) and (min-width: 320px) and (max-width: 460px) {
+      div.work img.segment {
+        margin: 0 auto 3em 0; } }
+    @media only screen and (max-width: 949px) and (min-width: 320px) and (max-width: 460px) {
+      div.work img.animation {
+        margin: 0 auto 3em 0; } }
+  @media (max-width: 460px) {
+    div.work img.masthead {
+      width: 50%;
+      padding: 0;
+      margin: 0 auto 6em 0; }
+    div.work img.segment {
+      width: 50%;
+      padding: 0;
+      margin: 0 auto 6em 0; }
+    div.work img.animation {
+      width: 50%;
+      padding: 0;
+      margin: 0 auto 6em 0; } }
+    @media only screen and (max-width: 460px) and (min-width: 320px) and (max-width: 460px) {
+      div.work img.masthead {
+        margin: 0 auto 3em 0; } }
+    @media only screen and (max-width: 460px) and (min-width: 320px) and (max-width: 460px) {
+      div.work img.segment {
+        margin: 0 auto 3em 0; } }
+    @media only screen and (max-width: 460px) and (min-width: 320px) and (max-width: 460px) {
+      div.work img.animation {
+        margin: 0 auto 3em 0; } }
+  div.work .intro {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 81.25%;
+    margin: 0 auto; }
+    @media (max-width: 949px) {
+      div.work .intro {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 87.5%;
+        margin: 0 auto; } }
+    @media (max-width: 460px) {
+      div.work .intro {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%; } }
+  div.work .group {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 6em;
+    float: left; }
+    @media (max-width: 949px) {
+      div.work .group {
+        margin-bottom: 6em; } }
+    @media (max-width: 460px) {
+      div.work .group {
+        float: none;
+        margin-bottom: 0; } }
+    div.work .group .segment {
+      margin: 0 102px 0 0;
+      float: left; }
+      div.work .group .segment:last-child {
+        margin: 0; }
+      @media (max-width: 949px) {
+        div.work .group .segment {
+          margin-right: 60px; } }
+      @media (max-width: 460px) {
+        div.work .group .segment {
+          float: none;
+          margin: 0 0 3em; }
+          div.work .group .segment:last-child {
+            margin: 0 0 3em 0; } }
+  div.work .solo.segment {
+    margin: 2em auto; }
+  div.work .animation {
+    padding: 0;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 25s; }
