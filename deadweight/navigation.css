@@ -1,0 +1,69 @@
+
+/* Layout
+-------------------------------------------------------- */
+
+.navigation {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	@include breakpoint(son) { padding-left: 0; }
+
+	li {
+
+		margin: 0 auto;
+		padding: 40px 0;
+		list-style-type: none;
+		background
+
+		&:last-child {
+			margin: 0;
+		}
+
+		&.manmadeit {
+			background: #ee8934;
+		}
+
+		&.sparkart {
+			background: #48ace0;
+		}
+
+		&.redbox {
+			background: #7b0a2d;
+		}
+
+		&.tremorlow {
+			background: #eceae1;
+		}
+
+		&.issues {
+			background: #246c84;
+		}
+
+		a {
+			width: 230px;
+			height: 230px;
+			margin: 0 auto;
+			display: block;
+
+			img {
+				width: 230px;
+				height: 230px;
+			}
+		}
+
+		em {
+			text-align: center;
+			display: block;
+		}
+
+		.logo {
+			width: 110px;
+			height: 168px;
+			display: block;
+			text-indent: -5000px;
+			background: url('../images/layout/logo.png') no-repeat;	
+			margin: 0 auto;
+		}
+	}
+}
