@@ -62,7 +62,7 @@ body {
 			margin: 0 auto;
 			padding: 0 20px;
 
-		.logo a {
+		.logo {
 			float: left;
 			margin-right: 15px;
 			width: 64px;
@@ -89,8 +89,6 @@ body {
 		}
 	}
 }
-
-
 
 /* Footer
 -------------------------------------------------------- */
@@ -119,3 +117,37 @@ body {
 		}
 	}
 }
+
+/* Work
+-------------------------------------------------------- */
+
+.work {
+
+	width: 100%;
+	height: auto;
+
+	&.manmadeit {
+		background: #F6F6F4;
+	}
+
+	.content {
+
+		.introduction {
+			width: 600px;
+			padding-top: 20px;
+			margin: 0 0 40px 100px;
+		}
+
+	}
+
+	.gallery {
+		width: 940px;
+		margin: 0 auto;
+
+		img {
+			width: 940px;
+			margin-bottom: 40px;
+		}
+	}
+}
+
