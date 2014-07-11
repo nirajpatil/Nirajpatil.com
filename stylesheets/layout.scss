@@ -1,4 +1,4 @@
-/* Niraj Patil - Layout
+/* nirajpatil.com - Layout
 -------------------------------------------------------- */
 
 @import "mixins.scss";
@@ -62,7 +62,7 @@ body {
 			margin: 0 auto;
 			padding: 0 20px;
 
-		.logo a {
+		.logo {
 			float: left;
 			margin-right: 15px;
 			width: 64px;
@@ -90,7 +90,10 @@ body {
 	}
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> FETCH_HEAD
 /* Footer
 -------------------------------------------------------- */
 
@@ -118,3 +121,33 @@ body {
 		}
 	}
 }
+
+/* Work
+-------------------------------------------------------- */
+
+.work {
+
+	width: 100%;
+	height: auto;
+
+	&.manmadeit {
+		background: #F6F6F4;
+	}
+
+	.content {
+
+		.introduction {
+			width: 600px;
+			padding-top: 20px;
+			margin: 0 0 40px 100px;
+		}
+
+	}
+
+	img {
+		width: 940px;
+		margin-bottom: 40px;
+	}
+	
+}
+
