@@ -1,22 +1,9 @@
-/* nirajpatil.com - Home
+/* nirajpatil.com - Index
 -------------------------------------------------------- */
 
 @import "mixins.scss";
 @import "colors.scss";
 @import "fanciness.scss";
-
-/* Section
--------------------------------------------------------- */
-
-section {
-	position: relative;
-	height: 800px;
-
-	.content {
-		width: 900px;
-		margin: 0 auto;
-	}
-}
 
 /* Notes
 -------------------------------------------------------- */
@@ -37,6 +24,53 @@ section {
 
 	small {
 		font: normal 11px/21px Georgia, serif;
+	}
+}
+
+/* Issues
+-------------------------------------------------------- */
+
+.issues {
+	background: $library;
+	height: 900px;
+	position: relative;
+	z-index: 3;
+
+
+	.content {
+
+		height: 600px;
+		overflow: hidden;
+		position: relative;
+		z-index: 9;
+
+		.iphone {
+			float: left;
+			margin: 150px 15px 0 0;	
+			width: 323px;
+			height: 632px;
+			background: url("../images/work/issues/issues.png") no-repeat;
+			@include image-2x("issues@2x.png", 646px, 1264px);
+
+		}
+
+		.notes {
+			margin-top: 150px;
+
+			p, a, small {
+				color: $library-text;
+			}
+		}
+	}
+
+	.city {
+		width: 1500px;
+		height: 600px;
+		overflow: hidden;
+		margin: -300px auto;
+		position: relative;
+		z-index: 10;
+
 	}
 }
 
@@ -308,54 +342,6 @@ section {
 	.notes {
 		float: right;
 		margin-top: 300px;
-	}
-}
-
-
-/* Issues
--------------------------------------------------------- */
-
-.issues {
-	background: $library;
-	height: 900px;
-	position: relative;
-	z-index: 3;
-
-
-	.content {
-
-		height: 600px;
-		overflow: hidden;
-		position: relative;
-		z-index: 9;
-
-		.iphone {
-			float: left;
-			margin: 150px 15px 0 0;	
-			width: 323px;
-			height: 632px;
-			background: url("../images/work/issues/issues.png") no-repeat;
-			@include image-2x("issues@2x.png", 646px, 1264px);
-
-		}
-
-		.notes {
-			margin-top: 150px;
-
-			p, a, small {
-				color: $library-text;
-			}
-		}
-	}
-
-	.city {
-		width: 1500px;
-		height: 600px;
-		overflow: hidden;
-		margin: -300px auto;
-		position: relative;
-		z-index: 10;
-
 	}
 }
 

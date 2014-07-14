@@ -8,6 +8,8 @@
 -------------------------------------------------------- */
 /* Niraj Patil - Color Guide
 -------------------------------------------------------- */
+/* Navigation
+-------------------------------------------------------- */
 /* Home
 -------------------------------------------------------- */
 /* Hello
@@ -32,17 +34,18 @@ body {
 /* Typography
 -------------------------------------------------------- */
 p {
-  font: normal 14px/21px Helvetica, Arial, Serif; }
+  font: normal 22px/32px CallunaRegular, Arial, Serif;
+  color: black; }
 
 a {
   color: black;
   text-decoration: underline; }
 
 h3 {
-  font: bold 18px/21px Helvetica, Arial, sans-serif; }
+  font: bold 18px/21px CallunaRegular, Arial, Serif; }
 
 h4 {
-  font: bold 14px/21px Helvetica, Arial, sans-serif; }
+  font: bold 14px/21px CallunaRegular, Arial, Serif; }
 
 /* Fonts
 -------------------------------------------------------- */
@@ -81,6 +84,22 @@ h4 {
   font-weight: normal;
   font-style: normal; }
 
+/* Section
+-------------------------------------------------------- */
+section {
+  position: relative;
+  height: 800px; }
+  section .content {
+    width: 716px;
+    margin: 0 auto; }
+
+section.about,
+section.bye {
+  height: auto; }
+  section.about .content,
+  section.bye .content {
+    width: 716px; }
+
 /* Header
 -------------------------------------------------------- */
 .hello {
@@ -103,12 +122,14 @@ h4 {
           background-image: url("logo@2x.png");
           background-size: 128px 220px; } }
     .hello .header h1 {
-      font: normal 28px/34px CallunaRegular, Georgia, Serif; }
+      font: normal 28px/34px CallunaRegular, Georgia, Serif;
+      margin: 10px 0; }
     .hello .header nav li {
       font: normal 22px/24px CallunaRegular, Georgia, Serif;
       list-style-type: none;
       float: left;
-      margin-right: 20px; }
+      margin-right: 20px;
+      color: #707070; }
       .hello .header nav li a {
         text-decoration: none; }
 
@@ -116,9 +137,8 @@ h4 {
 -------------------------------------------------------- */
 .bye {
   height: 300px;
+  padding: 100px 0;
   text-align: left; }
-  .bye h3 {
-    padding-top: 100px; }
   .bye ul {
     list-style-type: none;
     margin: 0;
@@ -129,19 +149,31 @@ h4 {
       .bye ul a:hover {
         color: #4fb4ea; }
 
-/* About
--------------------------------------------------------- */
 /* Work
--------------------------------------------------------- */
+--------------------------------------------------------
+
 .work {
-  width: 100%;
-  height: auto; }
-  .work.manmadeit {
-    background: #F6F6F4; }
-  .work .content .introduction {
-    width: 600px;
-    padding-top: 20px;
-    margin: 0 0 40px 100px; }
-  .work img {
-    width: 940px;
-    margin-bottom: 40px; }
+
+	width: 100%;
+	height: auto;
+
+	&.manmadeit {
+		background: #F6F6F4;
+	}
+
+	.content {
+
+		.introduction {
+			width: 600px;
+			padding-top: 20px;
+			margin: 0 0 40px 100px;
+		}
+
+	}
+
+	img {
+		width: 940px;
+		margin-bottom: 40px;
+	}
+	
+} */
