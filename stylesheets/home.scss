@@ -9,10 +9,11 @@
 -------------------------------------------------------- */
 
 .notes {
+	float: right;
+	width: 440px;
+	margin-top: 100px;
 	position: relative;
 	z-index: 5;
-	float: left;
-	width: 300px;
 
 	h3 {
 		margin: 0 0 10px;
@@ -23,8 +24,15 @@
 	}
 
 	small {
-		font: normal 11px/21px Georgia, serif;
+		font: normal 14px/22px CallunaRegular, Georgia, serif;
 	}
+}
+
+/* Hello
+-------------------------------------------------------- */
+
+.hello {
+	background: $library;
 }
 
 /* Issues
@@ -32,47 +40,63 @@
 
 .issues {
 	background: $library;
-	height: 900px;
 	position: relative;
 	z-index: 3;
 
 
 	.content {
 
-		height: 600px;
 		overflow: hidden;
 		position: relative;
 		z-index: 9;
 
 		.iphone {
 			float: left;
-			margin: 150px 15px 0 0;	
+			margin: 100px 15px 0 0;
 			width: 323px;
 			height: 632px;
 			background: url("../images/work/issues/issues.png") no-repeat;
-			@include image-2x("issues@2x.png", 646px, 1264px);
-
 		}
 
 		.notes {
-			margin-top: 150px;
 
 			p, a, small {
 				color: $library-text;
 			}
 		}
 	}
+}
 
-	.city {
-		width: 1500px;
-		height: 600px;
-		overflow: hidden;
-		margin: -300px auto;
-		position: relative;
-		z-index: 10;
 
+/* Redbox
+-------------------------------------------------------- */
+
+.redbox {
+	background: $floor;
+	z-index: 3;
+	overflow: hidden;
+
+	.content {
+
+		.kiosk {
+			display: block;
+			float: left;
+			margin: 100px 15px 0 0;
+			width: 148px;
+			height: 232px;
+			background: url("../images/work/redbox/kiosk.png") no-repeat;
+		}
+
+		.notes {
+			margin-top: 100px;
+
+			p, a, small {
+				color: $floor-text;
+			}
+		}
 	}
 }
+
 
 /* Man Made It
 -------------------------------------------------------- */
@@ -82,11 +106,10 @@
 
 	.sky {
 		width: 100%;
-		height: 570px;
+		height: 500px;
 		background-color: $sky;
 		clear: both;
 		background-image: url("../images/work/manmadeit/goldengate.png");
-		@include image-2x("goldengate@2x.png", 3000px, 166px);
 		background-position: bottom center;
 		background-repeat: no-repeat;
 		position: relative;
@@ -207,8 +230,6 @@
 		}
 
 		.notes {
-			margin-top: 150px;
-
 			h3, p {
 				color: #ffffff;
 			}
@@ -219,109 +240,17 @@
 		}
 
 		.zeppelin {
-			float: right;
+			float: left;
 			width: 179px;
 			height: 45px;
 			display: block;
 			background: url("../images/work/manmadeit/zeppelin.png") no-repeat;
-			@include image-2x("zeppelin@2x.png", 358px, 90px);
 			text-indent: -5000px;
-			margin: 200px 100px 0 0; 
-		}
-	}
-
-	.water {
-		width: 100%;
-		height: 215px;
-		padding-top: 15px;
-		background-image: url("../images/work/manmadeit/water.png");
-		@include image-2x("water@2x.png", 136px, 460px);
-		background-position: bottom center;
-		background-repeat: repeat-x;
-		position: relative;
-
-		.wave {
-			height: 9px;
-			display: block;
-			margin: 0 auto 15px;
-
-			&.father {
-				width: 291px;
-				background: url("../images/work/manmadeit/wave-father.png") no-repeat;
-				@include image-2x("wave-father@2x.png", 582px, 18px);
-			}
-
-			&.mother {
-				width: 147px;
-				background: url("../images/work/manmadeit/wave-mother.png") no-repeat;
-				@include image-2x("wave-mother@2x.png", 294px, 18px);
-			}
-
-			&.son {
-				width: 74px;
-				background: url("../images/work/manmadeit/wave-son.png") no-repeat;
-				@include image-2x("wave-son@2x.png", 148px, 18px);
-			}
+			margin: 100px 100px 0 0; 
 		}
 	}
 }
 
-/* Redbox
--------------------------------------------------------- */
-
-.redbox {
-	background: $floor;
-	z-index: 3;
-	margin-top: -45px;
-	overflow: hidden;
-
-	.ticket {
-
-		opacity: 0;
-
-		&.top {
-			margin-top: -190px;
-			height: 419px;
-			background: url("../images/work/redbox/tickets-top.png") no-repeat top center;
-			@include image-2x("tickets-top@2x.png", 2914px, 838px);
-		}
-
-		&.middle {
-			margin-top: -172px;
-			height: 478px;
-			background: url("../images/work/redbox/tickets-middle.png") no-repeat top center;
-			@include image-2x("tickets-middle@2x.png", 2914px, 956px);
-		}
-
-		&.bottom {
-			margin: -202px 0 0 0;
-			height: 451px;
-			background: url("../images/work/redbox/tickets-bottom.png") no-repeat top center;
-			@include image-2x("tickets-bottom@2x.png", 1934px, 902px);
-		}
-	}
-
-	.content {
-
-		.kiosk {
-			display: block;
-			float: left;
-			margin: -630px 15px 0 213px;
-			width: 148px;
-			height: 232px;
-			background: url("../images/work/redbox/kiosk.png") no-repeat;
-			@include image-2x("kiosk@2x.png", 296px, 454px);
-		}
-
-		.notes {
-			margin: -600px 0 0 380px;
-
-			p, a, small {
-				color: $floor-text;
-			}
-		}
-	}
-}
 
 /* Sparkart
 -------------------------------------------------------- */
@@ -332,47 +261,9 @@
 
 	.vortex {
 		float: left;
-		margin: 220px 0 0 210px;
+		margin: 80px 0 0 0;
 		width: 360px;
 		height: 360px;
 		background: url("../images/work/sparkart/vortex.png") no-repeat;
-		@include image-2x("vortex@2x.png", 720px, 720px);		
-	}
-
-	.notes {
-		float: right;
-		margin-top: 300px;
 	}
 }
-
-/* Tremor Low
--------------------------------------------------------- */
-
-.tremorlow {
-	background: $ocean;
-	overflow: hidden;
-
-	.siren {
-		margin: 0px 15px 0 500px;
-		width: 765px;
-		height: 715px;
-		background: url("../images/work/tremorlow/siren.png") no-repeat;
-		@include image-2x("siren@2x.png", 1530px, 1430px);
-
-	}
-
-	.content {
-		.notes {
-			margin-top: -300px;
-
-			h3 {
-				color: $ocean-sand;
-			}
-
-			p, a, small {
-				color: $ocean-text;
-			}
-		}
-	}
-}
-
