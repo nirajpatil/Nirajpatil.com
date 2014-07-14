@@ -29,6 +29,21 @@ body {
   overflow-x: hidden;
   font: normal 14px/21px Georgia, Serif; }
 
+/* Typography
+-------------------------------------------------------- */
+p {
+  font: normal 14px/21px Helvetica, Arial, Serif; }
+
+a {
+  color: black;
+  text-decoration: underline; }
+
+h3 {
+  font: bold 18px/21px Helvetica, Arial, sans-serif; }
+
+h4 {
+  font: bold 14px/21px Helvetica, Arial, sans-serif; }
+
 /* Fonts
 -------------------------------------------------------- */
 /* Symbolset */
@@ -89,10 +104,13 @@ body {
           background-size: 128px 220px; } }
     .hello .header h1 {
       font: normal 28px/34px CallunaRegular, Georgia, Serif; }
-    .hello .header nav a {
+    .hello .header nav li {
       font: normal 22px/24px CallunaRegular, Georgia, Serif;
-      text-decoration: none;
+      list-style-type: none;
+      float: left;
       margin-right: 20px; }
+      .hello .header nav li a {
+        text-decoration: none; }
 
 /* Footer
 -------------------------------------------------------- */
@@ -111,6 +129,8 @@ body {
       .bye ul a:hover {
         color: #4fb4ea; }
 
+/* About
+-------------------------------------------------------- */
 /* Work
 -------------------------------------------------------- */
 .work {

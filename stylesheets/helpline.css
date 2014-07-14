@@ -357,21 +357,6 @@ section {
     width: 900px;
     margin: 0 auto; }
 
-/* Typography
--------------------------------------------------------- */
-p {
-  font: normal 14px/21px Georgia, serif; }
-
-a {
-  color: black;
-  text-decoration: underline; }
-
-h3 {
-  font: bold 18px/21px Helvetica, Arial, sans-serif; }
-
-h4 {
-  font: bold 14px/21px Helvetica, Arial, sans-serif; }
-
 /* Notes
 -------------------------------------------------------- */
 .notes {
