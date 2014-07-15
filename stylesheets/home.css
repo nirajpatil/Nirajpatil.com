@@ -8,21 +8,11 @@
 -------------------------------------------------------- */
 /* Niraj Patil - Color Guide
 -------------------------------------------------------- */
-/* Navigation
--------------------------------------------------------- */
-/* Issues App
--------------------------------------------------------- */
-/* Home
--------------------------------------------------------- */
-/* Man Made It
--------------------------------------------------------- */
-/* Redbox Tickets
--------------------------------------------------------- */
-/* Sparkart
--------------------------------------------------------- */
-/* Books */
-/* Tremor Low
--------------------------------------------------------- */
+/* Foundation */
+/* Issues App */
+/* Redbox Tickets */
+/* Man Made It */
+/* Sparkart */
 /* Niraj Patil - Fanciness
 -------------------------------------------------------- */
 .animated {
@@ -239,9 +229,9 @@
   .manmadeit .sky {
     width: 100%;
     height: 600px;
-    background-color: #282220;
+    background-color: #ddc09e;
     clear: both;
-    background-image: url("../images/work/manmadeit/goldengate.png");
+    background-image: url("../images/page-index/bg-manmadeit.png");
     background-position: bottom center;
     background-repeat: no-repeat;
     position: relative; }
@@ -269,7 +259,7 @@
         height: 3px;
         border-radius: 3px; }
     .manmadeit .sky .stars.front .star {
-      background: #2b5466; }
+      background: #efd4b9; }
       .manmadeit .sky .stars.front .star.father.flash {
         top: 475px;
         left: 800px;
@@ -291,7 +281,7 @@
         left: 400px;
         -webkit-animation-duration: 10s; }
     .manmadeit .sky .stars.back .star {
-      background: #498fae; }
+      background: white; }
       .manmadeit .sky .stars.back .star.father.flash {
         top: 20px;
         left: 300px;
@@ -312,16 +302,14 @@
         top: 150px;
         left: 900px;
         -webkit-animation-duration: 15s; }
-    .manmadeit .sky .notes h3, .manmadeit .sky .notes p {
-      color: #ffffff; }
-    .manmadeit .sky .notes p, .manmadeit .sky .notes a, .manmadeit .sky .notes small {
-      color: #589bb9; }
-    .manmadeit .sky .zeppelin {
+    .manmadeit .sky h3, .manmadeit .sky p, .manmadeit .sky a, .manmadeit .sky small {
+      color: #282220; }
+    .manmadeit .sky .manmadeit_logo {
       float: left;
-      width: 179px;
-      height: 45px;
+      width: 324px;
+      height: 324px;
       display: block;
-      background: url("../images/work/manmadeit/zeppelin.png") no-repeat;
+      background: url("../images/page-index/img-manmadeit.png") no-repeat;
       text-indent: -5000px;
       margin: 100px 100px 0 0; }
 
