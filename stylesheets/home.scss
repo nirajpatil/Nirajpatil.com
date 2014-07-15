@@ -20,7 +20,7 @@
 	}
 
 	p {
-		margin-top: 0;
+		margin: 0 0 10px 0;
 	}
 
 	small {
@@ -51,13 +51,15 @@
 
 		.iphone {
 			float: left;
-			margin: 100px 15px 0 0;
-			width: 323px;
-			height: 632px;
-			background: url("../images/work/issues/issues.png") no-repeat;
+			margin: 58px 15px 0 20px;
+			width: 324px;
+			height: 542px;
+			background: url("../images/page-index/img-issues.png") no-repeat top left;
 		}
 
 		.notes {
+
+			margin-top: 250px;
 
 			p, a, small {
 				color: $library-text;
@@ -80,10 +82,10 @@
 		.kiosk {
 			display: block;
 			float: left;
-			margin: 100px 15px 0 0;
-			width: 148px;
-			height: 232px;
-			background: url("../images/work/redbox/kiosk.png") no-repeat;
+			margin: 50px 15px 0 20px;
+			width: 324px;
+			height: 498px;
+			background: url("../images/page-index/img-redbox.png") no-repeat;
 		}
 
 		.notes {

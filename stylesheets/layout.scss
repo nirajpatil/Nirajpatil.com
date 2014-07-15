@@ -121,14 +121,13 @@ section.bye {
 			padding: 20px 20px;
 
 		.logo {
-			float: left;
-			margin-right: 15px;
-			width: 64px;
-			height: 110px;
-			display: none;
+			width: 50px;
+			height: 58px;
+			display: block;
 			text-indent: -5000px;
-			background: url("../images/layout/logo.png") no-repeat;
-			@include image-2x("logo@2x.png", 128px, 220px);
+			background: url("../images/layout/logo.png") no-repeat top left;
+			float: left;
+			margin: 15px 20px 0 0;
 		}
 
 		h1 {
