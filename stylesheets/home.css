@@ -10,6 +10,7 @@
 -------------------------------------------------------- */
 /* Foundation */
 /* Issues App */
+/* TRNIO App */
 /* Redbox Tickets */
 /* Man Made It */
 /* Sparkart */
@@ -178,11 +179,6 @@
   .notes small {
     font: normal 14px/22px CallunaRegular, Georgia, serif; }
 
-/* Hello
--------------------------------------------------------- */
-.hello {
-  background: #fdfde2; }
-
 /* Issues
 -------------------------------------------------------- */
 .issues {
@@ -219,7 +215,7 @@
 .manmadeit .sky {
   width: 100%;
   height: 600px;
-  background: #ece3d7 url("../images/page-index/bg-manmadeit.png") bottom center no-repeat;
+  background: #f6f6f4 url("../images/page-index/bg-manmadeit.png") bottom center no-repeat;
   clear: both; }
   .manmadeit .sky .stars .star {
     position: absolute;

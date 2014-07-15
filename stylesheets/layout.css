@@ -10,6 +10,7 @@
 -------------------------------------------------------- */
 /* Foundation */
 /* Issues App */
+/* TRNIO App */
 /* Redbox Tickets */
 /* Man Made It */
 /* Sparkart */
@@ -116,6 +117,24 @@ section.bye {
       .hello .header nav li a {
         text-decoration: none; }
 
+#page-index .hello {
+  background: #fdfde2; }
+
+#page-issues .hello {
+  background: #fdfde2; }
+
+#page-trnio .hello {
+  background: #f4f4f4; }
+
+#page-redbox .hello {
+  background: #d0fffc; }
+
+#page-manmadeit .hello {
+  background: #f6f6f4; }
+
+#page-sparkart .hello {
+  background: #ffefab; }
+
 /* Footer
 -------------------------------------------------------- */
 .bye {
@@ -132,30 +151,16 @@ section.bye {
         color: #4fb4ea; }
 
 /* Work
---------------------------------------------------------
-
-.work {
-
-	width: 100%;
-	height: auto;
-
-	&.manmadeit {
-		background: #F6F6F4;
-	}
-
-	.content {
-
-		.introduction {
-			width: 600px;
-			padding-top: 20px;
-			margin: 0 0 40px 100px;
-		}
-
-	}
-
-	img {
-		width: 940px;
-		margin-bottom: 40px;
-	}
-	
-} */
+-------------------------------------------------------- */
+#page-manmadeit .project {
+  width: 100%;
+  height: auto; }
+  #page-manmadeit .project.manmadeit {
+    background: #F6F6F4; }
+  #page-manmadeit .project .content .introduction {
+    width: 716px;
+    padding-top: 20px;
+    margin: 0 0 40px 100px; }
+  #page-manmadeit .project img {
+    width: 900px;
+    margin-bottom: 40px; }
