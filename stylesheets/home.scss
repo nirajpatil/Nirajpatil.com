@@ -40,14 +40,8 @@
 
 .issues {
 	background: $issues-background;
-	position: relative;
-	z-index: 3;
 
 	.content {
-
-		overflow: hidden;
-		position: relative;
-		z-index: 9;
 
 		.iphone {
 			float: left;
@@ -59,7 +53,7 @@
 
 		.notes {
 
-			margin-top: 250px;
+			margin-top: 240px;
 
 			p, a, small {
 				color: $issues-copy;
@@ -74,8 +68,6 @@
 
 .redbox {
 	background: $redbox-background;
-	z-index: 3;
-	overflow: hidden;
 
 	.content {
 
@@ -89,7 +81,7 @@
 		}
 
 		.notes {
-			margin-top: 100px;
+			margin-top: 200px;
 
 			p, a, small {
 				color: $redbox-copy;
@@ -103,17 +95,12 @@
 -------------------------------------------------------- */
 
 .manmadeit {
-	z-index: 5;
 
 	.sky {
 		width: 100%;
 		height: 600px;
-		background-color: $manmadeit-background;
+		background: $manmadeit-background url("../images/page-index/bg-manmadeit.png") bottom center no-repeat;
 		clear: both;
-		background-image: url("../images/page-index/bg-manmadeit.png");
-		background-position: bottom center;
-		background-repeat: no-repeat;
-		position: relative;
 
 		.stars {
 
@@ -249,14 +236,13 @@
 -------------------------------------------------------- */
 
 .sparkart {
-	background: $universe;
-	z-index: 4;
+	background: $sparkart-background;
 
 	.vortex {
 		float: left;
 		margin: 80px 0 0 0;
 		width: 360px;
 		height: 360px;
-		background: url("../images/work/sparkart/vortex.png") no-repeat;
+		background: url("../images/page-index/img-vortex.png") no-repeat;
 	}
 }
