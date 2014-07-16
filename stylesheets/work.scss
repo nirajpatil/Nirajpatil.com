@@ -1,0 +1,68 @@
+/* nirajpatil.com - Work
+-------------------------------------------------------- */
+
+@import "mixins.scss";
+@import "colors.scss";
+
+
+/* Work
+-------------------------------------------------------- */
+
+body.work {
+
+	section {
+		width: 100%;
+		height: auto;
+
+		&.header {
+			padding: 60px 0 100px;
+
+			.content {
+				width: 900px;
+
+				img {
+					margin: 0 auto;
+					display: block;
+				}
+			}
+		}
+
+		&.introduction {
+			padding: 100px 0 60px;
+
+			.content {
+				width: 900px;
+
+				.image.left {
+					float: left;
+				}
+
+				.copy.right {
+					width: 440px;
+					float: right;
+				}
+			}
+		}
+
+		&.screens {
+			clear: both;
+			padding: 60px 0;
+
+			h3 {
+				text-align: center;
+				padding-bottom: 60px;
+			}
+
+			.image {
+				width: 1500px;
+				margin-left: -120px;
+			}
+		}
+	}
+}
+
+/* Issues */
+
+#page-issues .header {
+	background-color: $issues-background;
+}

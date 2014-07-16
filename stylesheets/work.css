@@ -1,0 +1,50 @@
+/* nirajpatil.com - Work
+-------------------------------------------------------- */
+/* Niraj Patil - Mixins
+-------------------------------------------------------- */
+/* Retina Image-Ready Mixin 
+-------------------------------------------------------- */
+/* Clearfix
+-------------------------------------------------------- */
+/* Niraj Patil - Color Guide
+-------------------------------------------------------- */
+/* Foundation */
+/* Issues App */
+/* TRNIO App */
+/* Redbox Tickets */
+/* Man Made It */
+/* Sparkart */
+/* Work
+-------------------------------------------------------- */
+body.work section {
+  width: 100%;
+  height: auto; }
+  body.work section.header {
+    padding: 60px 0 100px; }
+    body.work section.header .content {
+      width: 900px; }
+      body.work section.header .content img {
+        margin: 0 auto;
+        display: block; }
+  body.work section.introduction {
+    padding: 100px 0 60px; }
+    body.work section.introduction .content {
+      width: 900px; }
+      body.work section.introduction .content .image.left {
+        float: left; }
+      body.work section.introduction .content .copy.right {
+        width: 440px;
+        float: right; }
+  body.work section.screens {
+    clear: both;
+    padding: 60px 0; }
+    body.work section.screens h3 {
+      text-align: center;
+      padding-bottom: 60px; }
+    body.work section.screens .image {
+      width: 1500px;
+      margin-left: -120px; }
+
+/* Issues */
+#page-issues .header {
+  background-color: #fdfde2; }
