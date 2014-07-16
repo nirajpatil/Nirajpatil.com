@@ -29,10 +29,12 @@ a {
 
 h3 {
 	font: bold 18px/21px CallunaRegular, Arial, Serif;
+	text-transform: uppercase;
 }
 
 h4 {
 	font: bold 14px/21px CallunaRegular, Arial, Serif;
+	text-transform: uppercase;
 }
 
 
@@ -167,6 +169,7 @@ section.bye {
 	height: 300px;
 	padding: 100px 0;
 	text-align: left;
+	clear: both;
 
 	ul {
 		list-style-type: none;
@@ -180,37 +183,6 @@ section.bye {
 				color: lighten($linkedin, 20%);
 			}
 
-		}
-	}
-}
-
-
-/* Work
--------------------------------------------------------- */
-
-#page-manmadeit {
-
-	.project {
-		width: 100%;
-		height: auto;
-
-		&.manmadeit {
-			background: #F6F6F4;
-		}
-
-		.content {
-
-			.introduction {
-				width: 716px;
-				padding-top: 20px;
-				margin: 0 0 40px 100px;
-			}
-
-		}
-
-		img {
-			width: 900px;
-			margin-bottom: 40px;
 		}
 	}
 }

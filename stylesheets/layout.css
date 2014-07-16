@@ -31,10 +31,12 @@ a {
   text-decoration: underline; }
 
 h3 {
-  font: bold 18px/21px CallunaRegular, Arial, Serif; }
+  font: bold 18px/21px CallunaRegular, Arial, Serif;
+  text-transform: uppercase; }
 
 h4 {
-  font: bold 14px/21px CallunaRegular, Arial, Serif; }
+  font: bold 14px/21px CallunaRegular, Arial, Serif;
+  text-transform: uppercase; }
 
 /* Fonts
 -------------------------------------------------------- */
@@ -140,7 +142,8 @@ section.bye {
 .bye {
   height: 300px;
   padding: 100px 0;
-  text-align: left; }
+  text-align: left;
+  clear: both; }
   .bye ul {
     list-style-type: none;
     margin: 0;
@@ -149,18 +152,3 @@ section.bye {
       text-decoration: none; }
       .bye ul a:hover {
         color: #4fb4ea; }
-
-/* Work
--------------------------------------------------------- */
-#page-manmadeit .project {
-  width: 100%;
-  height: auto; }
-  #page-manmadeit .project.manmadeit {
-    background: #F6F6F4; }
-  #page-manmadeit .project .content .introduction {
-    width: 716px;
-    padding-top: 20px;
-    margin: 0 0 40px 100px; }
-  #page-manmadeit .project img {
-    width: 900px;
-    margin-bottom: 40px; }
