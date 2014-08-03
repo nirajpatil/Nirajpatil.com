@@ -13,6 +13,7 @@ body.work {
 	section {
 		width: 100%;
 		height: auto;
+		clear: both;
 
 		&.header {
 			padding: 60px 0 100px;
@@ -27,31 +28,45 @@ body.work {
 			}
 		}
 
+		h3 {
+			text-align: center;
+			padding-bottom: 60px;
+		}
+
+		.content {
+			width: 900px;
+
+			h3 {
+				text-align: left;
+				padding-bottom: 0;
+			}
+
+			.image.left {
+				float: left;
+			}
+
+			.image.right {
+				float: right;
+			}
+
+			.copy.left {
+				width: 440px;
+				float: left;
+			}
+
+			.copy.right {
+				width: 440px;
+				float: right;
+			}
+		}
+
 		&.introduction {
 			padding: 100px 0 60px;
-
-			.content {
-				width: 900px;
-
-				.image.left {
-					float: left;
-				}
-
-				.copy.right {
-					width: 440px;
-					float: right;
-				}
-			}
 		}
 
 		&.screens {
 			clear: both;
 			padding: 60px 0;
-
-			h3 {
-				text-align: center;
-				padding-bottom: 60px;
-			}
 
 			.image {
 				width: 1500px;

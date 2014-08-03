@@ -18,7 +18,8 @@
 -------------------------------------------------------- */
 body.work section {
   width: 100%;
-  height: auto; }
+  height: auto;
+  clear: both; }
   body.work section.header {
     padding: 60px 0 100px; }
     body.work section.header .content {
@@ -26,21 +27,29 @@ body.work section {
       body.work section.header .content img {
         margin: 0 auto;
         display: block; }
+  body.work section h3 {
+    text-align: center;
+    padding-bottom: 60px; }
+  body.work section .content {
+    width: 900px; }
+    body.work section .content h3 {
+      text-align: left;
+      padding-bottom: 0; }
+    body.work section .content .image.left {
+      float: left; }
+    body.work section .content .image.right {
+      float: right; }
+    body.work section .content .copy.left {
+      width: 440px;
+      float: left; }
+    body.work section .content .copy.right {
+      width: 440px;
+      float: right; }
   body.work section.introduction {
     padding: 100px 0 60px; }
-    body.work section.introduction .content {
-      width: 900px; }
-      body.work section.introduction .content .image.left {
-        float: left; }
-      body.work section.introduction .content .copy.right {
-        width: 440px;
-        float: right; }
   body.work section.screens {
     clear: both;
     padding: 60px 0; }
-    body.work section.screens h3 {
-      text-align: center;
-      padding-bottom: 60px; }
     body.work section.screens .image {
       width: 1500px;
       margin-left: -120px; }
