@@ -32,29 +32,49 @@ body.work {
 				margin: 0 auto;
 				display: block;
 			}
+
+			&.redbox {
+				padding: 0;
+			}
 		}
 
 		&.introduction {
 
-			.content:after { 
-				content: " ";
-				display: block; 
-				height: 0; 
-				clear: both;
-				*zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML += '<div class="ie7-clear"></div>' );
+			&.issues {
+
+				.content:after { 
+					content: " ";
+					display: block; 
+					height: 0; 
+					clear: both;
+					*zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML += '<div class="ie7-clear"></div>' );
+				}
+
+				.image {
+					float: left;
+				}
+
+				.copy {
+					width: 440px;
+					float: right;
+
+					h3 {
+						text-align: left;
+						padding: 0;
+					}
+				}
 			}
 
-			.image {
-				float: left;
-			}
+			&.redbox {
 
-			.copy {
-				width: 440px;
-				float: right;
+				.copy {
+					width: 716px;
+					padding: 0 92px;
+					text-align: center;
 
-				h3 {
-					text-align: left;
-					padding: 0;
+					h3 {
+						padding: 0;
+					}
 				}
 			}
 		}
@@ -66,10 +86,14 @@ body.work {
 				height: 1330px;
 			}
 
+			&.redbox img {
+				width: 900px;
+				margin-bottom: 80px;
+			}
+
 			&.manmadeit img {
 				width: 900px;
 				margin-bottom: 80px;
-
 			}
 		}
 
@@ -136,6 +160,31 @@ body.work {
 #page-issues .background {
 	background: $issues-background url(../images/work/issues/bg-bars.png) top center no-repeat;
 	position: relative;
+}
+
+/* Redbox Tickets */
+
+#page-redbox {
+	background: #A4172D;
+
+	.background {
+		background: $redbox-background;
+	}
+
+	.redbox h3,
+	.redbox p {
+		color: $white;
+	}
+
+	.copy {
+		width: 808px;
+		padding: 0 0 0 92px;
+		text-align: center;
+
+		h3.assist {
+			padding: 0;
+		}
+	}
 }
 
 /* Man Made It */

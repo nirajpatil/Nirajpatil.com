@@ -31,23 +31,34 @@ body.work section {
     body.work section.logo img {
       margin: 0 auto;
       display: block; }
-  body.work section.introduction .content:after {
+    body.work section.logo.redbox {
+      padding: 0; }
+  body.work section.introduction.issues .content:after {
     content: " ";
     display: block;
     height: 0;
     clear: both;
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML += '<div class="ie7-clear"></div>' ); }
-  body.work section.introduction .image {
+  body.work section.introduction.issues .image {
     float: left; }
-  body.work section.introduction .copy {
+  body.work section.introduction.issues .copy {
     width: 440px;
     float: right; }
-    body.work section.introduction .copy h3 {
+    body.work section.introduction.issues .copy h3 {
       text-align: left;
+      padding: 0; }
+  body.work section.introduction.redbox .copy {
+    width: 716px;
+    padding: 0 92px;
+    text-align: center; }
+    body.work section.introduction.redbox .copy h3 {
       padding: 0; }
   body.work section.collection.issues {
     background: url("../images/work/issues/bg-collection.jpg") center 100px no-repeat;
     height: 1330px; }
+  body.work section.collection.redbox img {
+    width: 900px;
+    margin-bottom: 80px; }
   body.work section.collection.manmadeit img {
     width: 900px;
     margin-bottom: 80px; }
@@ -84,6 +95,21 @@ body.work section {
 #page-issues .background {
   background: #fdfde2 url(../images/work/issues/bg-bars.png) top center no-repeat;
   position: relative; }
+
+/* Redbox Tickets */
+#page-redbox {
+  background: #A4172D; }
+  #page-redbox .background {
+    background: #d0fffc; }
+  #page-redbox .redbox h3,
+  #page-redbox .redbox p {
+    color: white; }
+  #page-redbox .copy {
+    width: 808px;
+    padding: 0 0 0 92px;
+    text-align: center; }
+    #page-redbox .copy h3.assist {
+      padding: 0; }
 
 /* Man Made It */
 #page-manmadeit {
