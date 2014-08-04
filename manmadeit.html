@@ -1,21 +1,5 @@
 <!DOCTYPE html>
 
-<!-- 
-
-Hi there. If you're reading this, I'm already flattered. You're either really interested in how I built something, or you're facepalming at how terribly I built something. Let's begin with some facts:
-
-The site's a work-in-progress.
-The site will be responsive, just not today.
-I experiment a lot and occasionally break things.
-I know there's a shit-ton of divs. I'll clean those up soon.
-
-You: Jesus, that SVG. What are you thinking? 
-Me: I know, I know. I'm just playing around right now. I've wanted to get into Canvas and SVG for a while and still finding my way around it.
-
-Thanks for listening, and thanks for stopping by. 
-
--->
-
 <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
@@ -43,69 +27,79 @@ Thanks for listening, and thanks for stopping by.
 	<!-- Stylesheets of Stability -->
 	<link rel="stylesheet" href="stylesheets/normalize.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/home.css">
+	<link rel="stylesheet" href="stylesheets/work.css">
 
 </head>
-<body id="page-manmadeit">
+<body id="page-manmadeit" class="section work">
 
 	<div class="page">
 	
-		<!-- Header -->
-		<section class="hello">
+		<!-- Man Made It Background -->
+		<div class="manmadeit header background">
+
+			<!-- Header -->
+			<section class="hello">
+				
+				<div class="header">
+
+					<div class="logo">Niraj Patil</div>
+
+					<h1>The life and crimes of Niraj Patil.</h1>
+					<nav>
+
+						<li class="work"><a href="index.html">Work</a></li>
+						<li class="play"><a href="tumblr.nirajpatil.com">Play</a></li>
+						<li class="meet"><a href="about.html">Meet</a></li>
+						<li class="shop">Shop (Soon)</li>
+
+					</nav>
+
+				</div>
+
+			</section>
+
+			<!-- Logo -->
+			<section class="manmadeit logo">
+
+					<img src="images/work/manmadeit/img-logo.png" alt="Man Made It logo" />
 			
-			<div class="header">
+			</section>
 
-				<div class="logo">Niraj Patil</div>
+		</div>
 
-				<h1>The life and crimes of Niraj Patil.</h1>
-				<nav>
-
-					<li class="work"><a href="index.html">Work</a></li>
-					<li class="play"><a href="tumblr.nirajpatil.com">Play</a></li>
-					<li class="meet"><a href="about.html">Meet</a></li>
-					<li class="shop">Shop (Soon)</li>
-
-				</nav>
-
-			</div>
-
-		</section>
-
-		<!-- Man Made It -->
-		<section class="project manmadeit">
+		<section class="manmadeit introduction">
 
 			<div class="content">
 				
-				<div class="introduction">
+				<div class="introduction copy">
 
-					<h1>Man Made It</h1>
+					<h3>Building a community of makers.</h3>
 				
-					<p>Man Made It has a vision. The San Francisco-based online retail store is building a library of stories; ones rich in ideation, creation and process; stories that can be shared with maker communities, hobbyists, ponderers and buyers around the world. Man Made It sells unique, hand-crafted products born out of studios, workshops and garages of these talented, independant makers. 
+					<p>Man Made It was more than an online retail store. They built a library of stories rich in creation and process; stories to be shared with makers, hobbyists, and buyers around the world. Man Made It sold unique, hand-crafted products born out of studios, workshops and garages of talented, independant makers.</p>
 
-					<p>We developed a unique platform that gave makers both publishing and store capabilities to tell some really rich stories about their lives, products and process, and ultimately present a more compelling view of their products for purchase. I led all design initiatives at Man Made It, beginning with branding and messaging. After establishing a language for use across the site and various mediums, I designed numerous site modules, interactions and functions. While designing the site, I worked with Man Made It's co-founder and lead developer to bring my work to life. Man Made It is set to launch mid-2013.</p>
+					<p>I worked with Man Made It to design and develop a unique store platform that allowed makers to tell stories about their craft while simultaneously selling their products. I helped the Man Made It team define their messaging, build their brand, design their site, and develop core modulues for core development.</p>
 				
 				</div>
-				
-				<img src="images/work/manmadeit/masthead.jpg" alt="manmadeit" />
-				<img class="page" src="images/work/manmadeit/home.jpg" alt="Home page" />
-				<img class="page" src="images/work/manmadeit/item.jpg" alt="Item page" />
 
-				<div class="video">
+			</section>
 
-					<video width="940" height="536" controls>
+			<section class="manmadeit collection">
 
-  						<source src="media/manmadeit/killspencer.mp4" type="video/mp4">
-  						<source src="movie.ogg" type="video/ogg">
+				<div class="content">
 
-					</video>
+					<h3>Home</h3>
+					<img class="collection image" src="images/work/manmadeit/home.jpg" alt="Home page" />
+
+					<h3>Product Details</h3>
+					<img class="collection image" src="images/work/manmadeit/item.jpg" alt="Item page" />
+					
+					<h3>Checking Out</h3>
+					<img class="collection image" src="images/work/manmadeit/cart.jpg" alt="Shopping cart overlay" />
 
 				</div>
-				<img class="page" src="images/work/manmadeit/cart.jpg" alt="Shopping cart overlay" />
-				<img class="page" src="images/work/manmadeit/checkout.jpg" alt="Checkout page" />
 
-			</div>
+			</section>
 
-		</section>
 		<section class="bye">
 
 			<div class="content">

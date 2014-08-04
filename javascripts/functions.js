@@ -4,7 +4,7 @@
 $(window).load(function() {
 
 /* External Links
-------------------------------------------------*/
+------------------------------------------------ */
 
 	$('a[rel="external"]').bind('click', function(e) {
 
@@ -15,18 +15,18 @@ $(window).load(function() {
 
 
 /* Home Page Animation Sequence
-------------------------------------------------*/
+------------------------------------------------ */
 
 //1. Logo animates on hover (whoa awesome!)
-$('.logo').hover(function(){
+//$('.logo').hover(function(){
 
-	$(this).addClass('animated dip');
+	//$(this).addClass('animated dip');
 
-}, function(){
+//}, function(){
 
-	$(this).removeClass('animated dip');
+	//$(this).removeClass('animated dip');
 
-});
+//});
 
 //2. Stars fade in.
 $('#page-home').waypoint(function() {

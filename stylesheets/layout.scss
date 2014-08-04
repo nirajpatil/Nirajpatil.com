@@ -155,10 +155,8 @@ section.bye {
 }
 
 #page-index .hello { background: $issues-background; }
-#page-issues .hello { background: $issues-background; }
 #page-trnio .hello { background: $trnio-background; }
 #page-redbox .hello { background: $redbox-background; }
-#page-manmadeit .hello { background: $manmadeit-background; }
 #page-sparkart .hello { background: $sparkart-background; }
 
 
@@ -167,7 +165,7 @@ section.bye {
 
 .bye {
 	height: 300px;
-	padding: 100px 0;
+	padding: 0 0 100px 0;
 	text-align: left;
 	clear: both;
 

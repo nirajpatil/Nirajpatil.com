@@ -14,19 +14,7 @@ body.work {
 		width: 100%;
 		height: auto;
 		clear: both;
-
-		&.header {
-			padding: 60px 0 100px;
-
-			.content {
-				width: 900px;
-
-				img {
-					margin: 0 auto;
-					display: block;
-				}
-			}
-		}
+		margin-bottom: 100px;
 
 		h3 {
 			text-align: center;
@@ -35,42 +23,109 @@ body.work {
 
 		.content {
 			width: 900px;
+		}
 
-			h3 {
-				text-align: left;
-				padding-bottom: 0;
-			}
+		&.logo {
+			padding: 0 0 100px;
 
-			.image.left {
-				float: left;
-			}
-
-			.image.right {
-				float: right;
-			}
-
-			.copy.left {
-				width: 440px;
-				float: left;
-			}
-
-			.copy.right {
-				width: 440px;
-				float: right;
+			img {
+				margin: 0 auto;
+				display: block;
 			}
 		}
 
 		&.introduction {
-			padding: 100px 0 60px;
-		}
 
-		&.screens {
-			clear: both;
-			padding: 60px 0;
+			.content:after { 
+				content: " ";
+				display: block; 
+				height: 0; 
+				clear: both;
+				*zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML += '<div class="ie7-clear"></div>' );
+			}
 
 			.image {
-				width: 1500px;
-				margin-left: -120px;
+				float: left;
+			}
+
+			.copy {
+				width: 440px;
+				float: right;
+
+				h3 {
+					text-align: left;
+					padding: 0;
+				}
+			}
+		}
+
+		&.collection {
+
+			&.issues {
+				background: url('../images/work/issues/bg-collection.jpg') center 100px no-repeat;
+				height: 1330px;
+			}
+
+			&.manmadeit img {
+				width: 900px;
+				margin-bottom: 80px;
+
+			}
+		}
+
+		&.interface {
+
+			.content {
+
+				&:after { 
+					content: " ";
+					display: block; 
+					height: 0; 
+					clear: both;
+					margin-bottom: 100px;
+					*zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML += '<div class="ie7-clear"></div>' );
+				}
+
+				.copy {
+					width: 256px;
+
+					h4 {
+						margin-top: 0;
+					}
+				}
+
+				.one.copy {
+					float: left;
+				}
+
+				.one.image {
+					float: right;
+				}
+
+				.two.copy {
+					float: right;
+				}
+
+				.two.image {
+					float: left;
+				}
+			}
+
+			.two.content:after {
+				margin-bottom: 0;
+			}
+		}
+
+		&.website {
+			background: url('../images/work/issues/bg-website.jpg') top center no-repeat;
+			padding: 100px 0;
+
+			.copy {
+				text-align: center;
+
+				h3 {
+					padding: 0;
+				}
 			}
 		}
 	}
@@ -78,6 +133,17 @@ body.work {
 
 /* Issues */
 
-#page-issues .header {
-	background-color: $issues-background;
+#page-issues .background {
+	background: $issues-background url(../images/work/issues/bg-bars.png) top center no-repeat;
+	position: relative;
+}
+
+/* Man Made It */
+
+#page-manmadeit {
+	background: $manmadeit-background;
+
+	.background {
+		background: #eddfce;
+	}
 }

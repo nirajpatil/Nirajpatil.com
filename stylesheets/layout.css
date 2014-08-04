@@ -122,17 +122,11 @@ section.bye {
 #page-index .hello {
   background: #fdfde2; }
 
-#page-issues .hello {
-  background: #fdfde2; }
-
 #page-trnio .hello {
   background: #f4f4f4; }
 
 #page-redbox .hello {
   background: #d0fffc; }
-
-#page-manmadeit .hello {
-  background: #f6f6f4; }
 
 #page-sparkart .hello {
   background: #ffefab; }
@@ -141,7 +135,7 @@ section.bye {
 -------------------------------------------------------- */
 .bye {
   height: 300px;
-  padding: 100px 0;
+  padding: 0 0 100px 0;
   text-align: left;
   clear: both; }
   .bye ul {

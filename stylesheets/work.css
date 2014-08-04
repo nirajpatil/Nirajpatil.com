@@ -19,41 +19,74 @@
 body.work section {
   width: 100%;
   height: auto;
-  clear: both; }
-  body.work section.header {
-    padding: 60px 0 100px; }
-    body.work section.header .content {
-      width: 900px; }
-      body.work section.header .content img {
-        margin: 0 auto;
-        display: block; }
+  clear: both;
+  margin-bottom: 100px; }
   body.work section h3 {
     text-align: center;
     padding-bottom: 60px; }
   body.work section .content {
     width: 900px; }
-    body.work section .content h3 {
-      text-align: left;
-      padding-bottom: 0; }
-    body.work section .content .image.left {
-      float: left; }
-    body.work section .content .image.right {
-      float: right; }
-    body.work section .content .copy.left {
-      width: 440px;
-      float: left; }
-    body.work section .content .copy.right {
-      width: 440px;
-      float: right; }
-  body.work section.introduction {
-    padding: 100px 0 60px; }
-  body.work section.screens {
+  body.work section.logo {
+    padding: 0 0 100px; }
+    body.work section.logo img {
+      margin: 0 auto;
+      display: block; }
+  body.work section.introduction .content:after {
+    content: " ";
+    display: block;
+    height: 0;
     clear: both;
-    padding: 60px 0; }
-    body.work section.screens .image {
-      width: 1500px;
-      margin-left: -120px; }
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML += '<div class="ie7-clear"></div>' ); }
+  body.work section.introduction .image {
+    float: left; }
+  body.work section.introduction .copy {
+    width: 440px;
+    float: right; }
+    body.work section.introduction .copy h3 {
+      text-align: left;
+      padding: 0; }
+  body.work section.collection.issues {
+    background: url("../images/work/issues/bg-collection.jpg") center 100px no-repeat;
+    height: 1330px; }
+  body.work section.collection.manmadeit img {
+    width: 900px;
+    margin-bottom: 80px; }
+  body.work section.interface .content:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    margin-bottom: 100px;
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML += '<div class="ie7-clear"></div>' ); }
+  body.work section.interface .content .copy {
+    width: 256px; }
+    body.work section.interface .content .copy h4 {
+      margin-top: 0; }
+  body.work section.interface .content .one.copy {
+    float: left; }
+  body.work section.interface .content .one.image {
+    float: right; }
+  body.work section.interface .content .two.copy {
+    float: right; }
+  body.work section.interface .content .two.image {
+    float: left; }
+  body.work section.interface .two.content:after {
+    margin-bottom: 0; }
+  body.work section.website {
+    background: url("../images/work/issues/bg-website.jpg") top center no-repeat;
+    padding: 100px 0; }
+    body.work section.website .copy {
+      text-align: center; }
+      body.work section.website .copy h3 {
+        padding: 0; }
 
 /* Issues */
-#page-issues .header {
-  background-color: #fdfde2; }
+#page-issues .background {
+  background: #fdfde2 url(../images/work/issues/bg-bars.png) top center no-repeat;
+  position: relative; }
+
+/* Man Made It */
+#page-manmadeit {
+  background: #f6f6f4; }
+  #page-manmadeit .background {
+    background: #eddfce; }

@@ -1,21 +1,5 @@
 <!DOCTYPE html>
 
-<!-- 
-
-Hi there. If you're reading this, I'm already flattered. You're either really interested in how I built something, or you're facepalming at how terribly I built something. Let's begin with some facts:
-
-The site's a work-in-progress.
-The site will be responsive, just not today.
-I experiment a lot and occasionally break things.
-I know there's a shit-ton of divs. I'll clean those up soon.
-
-You: Jesus, that SVG. What are you thinking? 
-Me: I know, I know. I'm just playing around right now. I've wanted to get into Canvas and SVG for a while and still finding my way around it.
-
-Thanks for listening, and thanks for stopping by. 
-
--->
-
 <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
@@ -49,45 +33,47 @@ Thanks for listening, and thanks for stopping by.
 <body id="page-issues" class="section work">
 
 	<div class="page">
-	
-		<!-- Header -->
-		<section class="hello">
-			
-			<div class="header">
 
-				<div class="logo">Niraj Patil</div>
+		<!-- Issues Background -->
+		<div class="issues header background">
 
-				<h1>The life and crimes of Niraj Patil.</h1>
-				<nav>
-
-					<li class="work"><a href="index.html">Work</a></li>
-					<li class="play"><a href="http://blog.nirajpatil.com">Play</a></li>
-					<li class="meet"><a href="about.html">Meet</a></li>
-					<li class="shop">Shop (Soon)</li>
-
-				</nav>
-
-			</div>
-
-		</section>
-
-		<!-- Issues -->
-		<section class="issues header">
-
-			<div class="content">
-
-				<img src="images/work/issues/img-logo.png" alt="Issues app logo" />
+			<!-- Header -->
+			<section class="hello">
 				
-			</div>
+				<div class="header">
 
-		</section>
+					<div class="logo">Niraj Patil</div>
+
+					<h1>The life and crimes of Niraj Patil.</h1>
+					<nav>
+
+						<li class="work"><a href="index.html">Work</a></li>
+						<li class="play"><a href="http://blog.nirajpatil.com">Play</a></li>
+						<li class="meet"><a href="about.html">Meet</a></li>
+						<li class="shop">Shop (Soon)</li>
+
+					</nav>
+
+				</div>
+
+			</section>
+
+			<!-- Logo -->
+			<section class="issues logo">
+
+					<img src="images/work/issues/img-logo.png" alt="Issues app logo" />
+			
+			</section>
+		
+		</div>
+
 		<section class="issues introduction">
 				
 			<div class="content">
 
-				<img class="image left" src="images/work/issues/img-preview.png" alt="Preview of Issues' Home screen" />
+				<img class="introduction image" src="images/work/issues/img-preview.png" alt="Preview of Issues' Home screen" />
 			
-				<div class="copy right">
+				<div class="introduction copy">
 
 					<h3>Hey Bub,</h3>
 
@@ -107,52 +93,61 @@ Thanks for listening, and thanks for stopping by.
 			</div>
 
 		</section>
-		<section class="issues screens">
+		<section class="issues collection">
 
-			<h3>Issues app screens and icons</h3>
-
-			<img class="image" src="images/work/issues/img-screens.jpg" alt="Preview of Issues' Home screen" />
+			<h3>I designed the app's screens, interactions, and icons</h3>
 
 		</section>
-		<section class="issues interactions">
+		<section class="issues interface">
 
-			<h3>Using Issues</h3>
+			<h3>There's some sweet functionality in this app</h3>
 
-			<div class="content">
+			<div class="interface one content">
 
-				<div class="copy left">
+				<div class="interface one copy">
 
-					<p>1. Users recommend issues via iOS’s ‘Share To’ dialog.</p>
-					<p>2. Users save issues to two lists: Want, and Have.</p>
-					<p>3. Users build collections by creating new lists. These lists are shared with users, in and outside of the app.</p>
+					<h4>Issues lets users:</h4>
+					<p>1. Recommend comics to friends through sharing.</p>
+					<p>2. Save comics to default lists: Want and Have.</p>
+					<p>3. Build collections by creating new lists. Lists are shared with users, in and outside of the app.</p>
+					
 
 				</div>
 
-				<img class="image right" src="images/work/issues/img-preview.png" alt="Preview of Issues' Home screen" />
+				<img class="interface one image" src="images/work/issues/img-interface.jpg" alt="Using the Issues app's main interface" />
 
 			</div>
 
-			<div class="content">
+			<div class="interface two content">
 
-				<div class="copy right">
+				<div class="interface two copy">
 
-					<p>Issues display a number of user-created tags. Tags help users find comics quicker through Search.</p>
-					<p>Within the issue, users swipe tags to vote them up or down. This helps makes tags more or less relevant to the issue, making it easier for other users to find comics by specific interests quicker.</p>
+					<h4>Tagging comics</h4>
+
+					<p>In Issues, users tag comics with words and phrases that describe them well. Other users swipe these 'tags', voting them up or down. This keeps tags relevant to the issue and makes it easier for new readers to find comics of interest quickly.</p>
 
 				</div>
 
-				<img class="image left" src="images/work/issues/img-preview.png" alt="Preview of Issues' Home screen" />
+				<img class="interface two image" src="images/work/issues/img-tags.jpg" alt="Users vote on tags" />
 
 			</div>
 
 		</section>
 		<section class="issues website">
 
-			<h3>Issues-app.com</h3>
-			
-			<p>Outside of the app, I’ve designed a simple site that helps users share interesting titles with friends, and asks them to join the Issues community by downloading the app.</p>
+			<div class="content">
 
-			<img class="image" src="images/work/issues/img-preview.png" alt="Preview of Issues App website" />
+				<div class="website copy">
+
+					<h3>Designing Issues-app.com</h3>
+				
+					<p>Issues-app.com lets Issues users share their favorite comics with non-Issues users. Comics are represented by unique cards (show below) and are shared via unique URLs.</p>
+
+				</div>
+
+				<img class="website image" src="images/work/issues/img-card.png" alt="Preview of Issues App website" />
+
+			</div>
 
 		</div>
 
