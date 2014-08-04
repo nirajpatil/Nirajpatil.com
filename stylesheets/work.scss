@@ -91,6 +91,10 @@ body.work {
 				margin-bottom: 80px;
 			}
 
+			&.redbox .last {
+				margin-bottom: 0;
+			}
+
 			&.manmadeit img {
 				width: 900px;
 				margin-bottom: 80px;
@@ -157,9 +161,26 @@ body.work {
 
 /* Issues */
 
-#page-issues .background {
-	background: $issues-background url(../images/work/issues/bg-bars.png) top center no-repeat;
-	position: relative;
+#page-issues {
+
+	.background {
+		background: $issues-background url(../images/work/issues/bg-bars.png) top center no-repeat;
+		position: relative;
+	}
+
+	section.bye {
+		color: $black;
+		padding: 0;
+
+		h3 {
+			text-align: left;
+			padding-bottom: 0;
+		}
+
+		a {
+			color: $black;
+		}
+	}
 }
 
 /* Redbox Tickets */
@@ -183,6 +204,20 @@ body.work {
 
 		h3.assist {
 			padding: 0;
+		}
+	}
+
+	section.bye {
+		color: $white;
+		padding: 0;
+
+		h3 {
+			text-align: left;
+			padding-bottom: 0;
+		}
+
+		a {
+			color: $white;
 		}
 	}
 }

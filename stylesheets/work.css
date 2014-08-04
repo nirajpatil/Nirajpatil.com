@@ -59,6 +59,8 @@ body.work section {
   body.work section.collection.redbox img {
     width: 900px;
     margin-bottom: 80px; }
+  body.work section.collection.redbox .last {
+    margin-bottom: 0; }
   body.work section.collection.manmadeit img {
     width: 900px;
     margin-bottom: 80px; }
@@ -95,6 +97,14 @@ body.work section {
 #page-issues .background {
   background: #fdfde2 url(../images/work/issues/bg-bars.png) top center no-repeat;
   position: relative; }
+#page-issues section.bye {
+  color: black;
+  padding: 0; }
+  #page-issues section.bye h3 {
+    text-align: left;
+    padding-bottom: 0; }
+  #page-issues section.bye a {
+    color: black; }
 
 /* Redbox Tickets */
 #page-redbox {
@@ -110,6 +120,14 @@ body.work section {
     text-align: center; }
     #page-redbox .copy h3.assist {
       padding: 0; }
+  #page-redbox section.bye {
+    color: white;
+    padding: 0; }
+    #page-redbox section.bye h3 {
+      text-align: left;
+      padding-bottom: 0; }
+    #page-redbox section.bye a {
+      color: white; }
 
 /* Man Made It */
 #page-manmadeit {

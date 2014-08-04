@@ -125,9 +125,6 @@ section.bye {
 #page-trnio .hello {
   background: #f4f4f4; }
 
-#page-redbox .hello {
-  background: #d0fffc; }
-
 #page-sparkart .hello {
   background: #ffefab; }
 
@@ -135,9 +132,11 @@ section.bye {
 -------------------------------------------------------- */
 .bye {
   height: 300px;
-  padding: 0 0 100px 0;
+  padding: 100px 0;
   text-align: left;
   clear: both; }
+  .bye h3 {
+    text-align: left; }
   .bye ul {
     list-style-type: none;
     margin: 0;
