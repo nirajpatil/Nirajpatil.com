@@ -18,7 +18,7 @@
 -------------------------------------------------------- */
 
 .mission {
-	background: $floor url("../images/page-helpline/helpinghands.png") no-repeat top right;
+	background: url("../images/page-helpline/helpinghands.png") no-repeat top right;
 	@include image-2x("helpinghands@2x.png", 1750px, 1042px);
 	height: 440px;
 	padding: 40px 0;
@@ -30,7 +30,7 @@
 			float: left;
 
 			p {
-				color: $floor-text;
+				color: $text;
 			}
 		}
 	}
@@ -89,7 +89,6 @@
 						text-decoration: none;
 					
 						&:hover {
-							color: darken($floor, 30%);
 						}
 					}
 				}

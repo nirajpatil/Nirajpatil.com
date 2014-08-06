@@ -10,6 +10,7 @@
 -------------------------------------------------------- */
 /* Foundation */
 /* Issues App */
+/* TRNIO App */
 /* Redbox Tickets */
 /* Man Made It */
 /* Sparkart */
@@ -175,6 +176,7 @@
 -------------------------------------------------------- */
 /* Foundation */
 /* Issues App */
+/* TRNIO App */
 /* Redbox Tickets */
 /* Man Made It */
 /* Sparkart */
@@ -343,38 +345,25 @@
   .notes small {
     font: normal 14px/22px CallunaRegular, Georgia, serif; }
 
-/* Hello
--------------------------------------------------------- */
-.hello {
-  background: #fdfde2; }
-
 /* Issues
 -------------------------------------------------------- */
 .issues {
-  background: #fdfde2;
-  position: relative;
-  z-index: 3; }
-  .issues .content {
-    overflow: hidden;
-    position: relative;
-    z-index: 9; }
-    .issues .content .iphone {
-      float: left;
-      margin: 58px 15px 0 20px;
-      width: 324px;
-      height: 542px;
-      background: url("../images/page-index/img-issues.png") no-repeat top left; }
-    .issues .content .notes {
-      margin-top: 250px; }
-      .issues .content .notes p, .issues .content .notes a, .issues .content .notes small {
-        color: #1b7b60; }
+  background: #fdfde2; }
+  .issues .content .iphone {
+    float: left;
+    margin: 58px 15px 0 20px;
+    width: 324px;
+    height: 542px;
+    background: url("../images/page-index/img-issues.png") no-repeat top left; }
+  .issues .content .notes {
+    margin-top: 240px; }
+    .issues .content .notes p, .issues .content .notes a, .issues .content .notes small {
+      color: #d37800; }
 
 /* Redbox
 -------------------------------------------------------- */
 .redbox {
-  background: #91f7f1;
-  z-index: 3;
-  overflow: hidden; }
+  background: #d0fffc; }
   .redbox .content .kiosk {
     display: block;
     float: left;
@@ -383,114 +372,105 @@
     height: 498px;
     background: url("../images/page-index/img-redbox.png") no-repeat; }
   .redbox .content .notes {
-    margin-top: 100px; }
+    margin-top: 200px; }
     .redbox .content .notes p, .redbox .content .notes a, .redbox .content .notes small {
       color: #1a9c99; }
 
 /* Man Made It
 -------------------------------------------------------- */
-.manmadeit {
-  z-index: 5; }
-  .manmadeit .sky {
-    width: 100%;
-    height: 600px;
-    background-color: #ddc09e;
-    clear: both;
-    background-image: url("../images/work/manmadeit/goldengate.png");
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    position: relative; }
-    .manmadeit .sky .stars .star {
-      position: absolute;
-      -webkit-animation-iteration-count: infinite; }
-      .manmadeit .sky .stars .star.father.flash {
-        width: 10px;
-        height: 10px;
-        border-radius: 10px; }
-      .manmadeit .sky .stars .star.mother.flash {
-        width: 10px;
-        height: 10px;
-        border-radius: 10px; }
-      .manmadeit .sky .stars .star.son.flash {
-        width: 5px;
-        height: 5px;
-        border-radius: 5px; }
-      .manmadeit .sky .stars .star.daughter.flash {
-        width: 3px;
-        height: 3px;
-        border-radius: 3px; }
-      .manmadeit .sky .stars .star.pet.flash {
-        width: 3px;
-        height: 3px;
-        border-radius: 3px; }
-    .manmadeit .sky .stars.front .star {
-      background: #efd4b9; }
-      .manmadeit .sky .stars.front .star.father.flash {
-        top: 475px;
-        left: 800px;
-        -webkit-animation-duration: 15s; }
-      .manmadeit .sky .stars.front .star.mother.flash {
-        top: 200px;
-        right: 150px;
-        -webkit-animation-duration: 5s; }
-      .manmadeit .sky .stars.front .star.son.flash {
-        top: 350px;
-        right: 450px;
-        -webkit-animation-duration: 8s; }
-      .manmadeit .sky .stars.front .star.daughter.flash {
-        top: 350px;
-        right: 450px;
-        -webkit-animation-duration: 8s; }
-      .manmadeit .sky .stars.front .star.pet.flash {
-        top: 100px;
-        left: 400px;
-        -webkit-animation-duration: 10s; }
-    .manmadeit .sky .stars.back .star {
-      background: white; }
-      .manmadeit .sky .stars.back .star.father.flash {
-        top: 20px;
-        left: 300px;
-        -webkit-animation-duration: 5s; }
-      .manmadeit .sky .stars.back .star.mother.flash {
-        top: 300px;
-        right: 600px;
-        -webkit-animation-duration: 8s; }
-      .manmadeit .sky .stars.back .star.son.flash {
-        top: 400px;
-        right: 750px;
-        -webkit-animation-duration: 5s; }
-      .manmadeit .sky .stars.back .star.daughter.flash {
-        top: 350px;
-        right: 450px;
-        -webkit-animation-duration: 8s; }
-      .manmadeit .sky .stars.back .star.pet.flash {
-        top: 150px;
-        left: 900px;
-        -webkit-animation-duration: 15s; }
-    .manmadeit .sky .notes h3, .manmadeit .sky .notes p {
-      color: #ffffff; }
-    .manmadeit .sky .notes p, .manmadeit .sky .notes a, .manmadeit .sky .notes small {
-      color: white; }
-    .manmadeit .sky .manmadeit_logo {
-      float: left;
-      width: 324px;
-      height: 324px;
-      display: block;
-      background: url("../images/page-index/img-manmadeit.png") no-repeat;
-      text-indent: -5000px;
-      margin: 100px 100px 0 0; }
+.manmadeit .sky {
+  width: 100%;
+  height: 600px;
+  background: #f6f6f4 url("../images/page-index/bg-manmadeit.png") bottom center no-repeat;
+  clear: both; }
+  .manmadeit .sky .stars .star {
+    position: absolute;
+    -webkit-animation-iteration-count: infinite; }
+    .manmadeit .sky .stars .star.father.flash {
+      width: 10px;
+      height: 10px;
+      border-radius: 10px; }
+    .manmadeit .sky .stars .star.mother.flash {
+      width: 10px;
+      height: 10px;
+      border-radius: 10px; }
+    .manmadeit .sky .stars .star.son.flash {
+      width: 5px;
+      height: 5px;
+      border-radius: 5px; }
+    .manmadeit .sky .stars .star.daughter.flash {
+      width: 3px;
+      height: 3px;
+      border-radius: 3px; }
+    .manmadeit .sky .stars .star.pet.flash {
+      width: 3px;
+      height: 3px;
+      border-radius: 3px; }
+  .manmadeit .sky .stars.front .star {
+    background: #efd4b9; }
+    .manmadeit .sky .stars.front .star.father.flash {
+      top: 475px;
+      left: 800px;
+      -webkit-animation-duration: 15s; }
+    .manmadeit .sky .stars.front .star.mother.flash {
+      top: 200px;
+      right: 150px;
+      -webkit-animation-duration: 5s; }
+    .manmadeit .sky .stars.front .star.son.flash {
+      top: 350px;
+      right: 450px;
+      -webkit-animation-duration: 8s; }
+    .manmadeit .sky .stars.front .star.daughter.flash {
+      top: 350px;
+      right: 450px;
+      -webkit-animation-duration: 8s; }
+    .manmadeit .sky .stars.front .star.pet.flash {
+      top: 100px;
+      left: 400px;
+      -webkit-animation-duration: 10s; }
+  .manmadeit .sky .stars.back .star {
+    background: white; }
+    .manmadeit .sky .stars.back .star.father.flash {
+      top: 20px;
+      left: 300px;
+      -webkit-animation-duration: 5s; }
+    .manmadeit .sky .stars.back .star.mother.flash {
+      top: 300px;
+      right: 600px;
+      -webkit-animation-duration: 8s; }
+    .manmadeit .sky .stars.back .star.son.flash {
+      top: 400px;
+      right: 730px;
+      -webkit-animation-duration: 5s; }
+    .manmadeit .sky .stars.back .star.daughter.flash {
+      top: 350px;
+      right: 450px;
+      -webkit-animation-duration: 8s; }
+    .manmadeit .sky .stars.back .star.pet.flash {
+      top: 150px;
+      left: 900px;
+      -webkit-animation-duration: 15s; }
+  .manmadeit .sky h3, .manmadeit .sky p, .manmadeit .sky a, .manmadeit .sky small {
+    color: #282220; }
+  .manmadeit .sky .manmadeit_logo {
+    float: left;
+    width: 324px;
+    height: 324px;
+    display: block;
+    background: url("../images/page-index/img-manmadeit.png") no-repeat;
+    text-indent: -5000px;
+    margin: 100px 100px 0 10px; }
 
 /* Sparkart
 -------------------------------------------------------- */
 .sparkart {
-  background: #ffce00;
-  z-index: 4; }
+  background: #ffefab; }
   .sparkart .vortex {
     float: left;
     margin: 80px 0 0 0;
     width: 360px;
     height: 360px;
-    background: url("../images/work/sparkart/vortex.png") no-repeat; }
+    background: url("../images/page-index/img-vortex.png") no-repeat; }
 
 /* Hello 
 -------------------------------------------------------- */
@@ -500,7 +480,7 @@
 /* Helpline Introduction
 -------------------------------------------------------- */
 .mission {
-  background: #91f7f1 url("../images/page-helpline/helpinghands.png") no-repeat top right;
+  background: url("../images/page-helpline/helpinghands.png") no-repeat top right;
   height: 440px;
   padding: 40px 0; }
   @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
@@ -513,13 +493,12 @@
     .mission .content .notes {
       float: left; }
       .mission .content .notes p {
-        color: #1a9c99; }
+        color: #707070; }
 
 /* Helpline
 -------------------------------------------------------- */
 .helpline {
-  height: auto;
-  background: #d8fcfa; }
+  height: auto; }
   .helpline .content {
     padding: 40px 20px; }
     .helpline .content .group {
@@ -550,8 +529,6 @@
             margin-bottom: 10px; }
           .helpline .content .group ul li a {
             text-decoration: none; }
-            .helpline .content .group ul li a:hover {
-              color: #10dfd3; }
 
 .bye {
   clear: left; }
