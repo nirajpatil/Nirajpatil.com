@@ -144,10 +144,18 @@ section.bye {
 				list-style-type: none;
 				float: left;
 				margin-right: 24px;
-				color: $text;
 
 				a {
+					color: $black;
 					text-decoration: none;
+
+					&:hover {
+						color: $text;
+					}
+				}
+
+				&.shop {
+					color: $text;
 				}
 			}
 		}

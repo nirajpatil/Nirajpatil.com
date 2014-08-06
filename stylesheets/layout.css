@@ -114,10 +114,14 @@ section.bye {
       font: normal 22px/24px CallunaRegular, Georgia, Serif;
       list-style-type: none;
       float: left;
-      margin-right: 24px;
-      color: #707070; }
+      margin-right: 24px; }
       .hello .header nav li a {
+        color: black;
         text-decoration: none; }
+        .hello .header nav li a:hover {
+          color: #707070; }
+      .hello .header nav li.shop {
+        color: #707070; }
 
 #page-index .hello {
   background: #fdfde2; }
