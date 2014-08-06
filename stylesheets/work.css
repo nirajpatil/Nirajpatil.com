@@ -134,3 +134,14 @@ body.work section {
   background: #f6f6f4; }
   #page-manmadeit .background {
     background: #eddfce; }
+  #page-manmadeit .copy {
+    width: 808px;
+    padding: 0 0 0 92px;
+    text-align: center; }
+    #page-manmadeit .copy h3.assist {
+      padding: 0; }
+  #page-manmadeit section.bye {
+    padding: 0; }
+    #page-manmadeit section.bye h3 {
+      text-align: left;
+      padding-bottom: 0; }
