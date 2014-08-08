@@ -51,8 +51,6 @@ body.work section {
     width: 716px;
     padding: 0 92px;
     text-align: center; }
-    body.work section.introduction.redbox .copy h3 {
-      padding: 0; }
   body.work section.collection.issues {
     background: url("../images/work/issues/bg-collection.jpg") center 100px no-repeat;
     height: 1330px; }
