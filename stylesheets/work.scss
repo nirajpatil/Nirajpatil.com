@@ -95,6 +95,15 @@ body.work {
 				width: 900px;
 				margin-bottom: 80px;
 			}
+
+			&.rewards img {
+				width: 900px;
+				margin-bottom: 80px;
+			}
+
+			&.rewards .last {
+				margin-bottom: 0;
+			}
 		}
 
 		&.interface {
@@ -225,6 +234,35 @@ body.work {
 
 	.background {
 		background: #eddfce;
+	}
+
+	.copy {
+		width: 808px;
+		padding: 0 0 0 92px;
+		text-align: center;
+
+		h3.assist {
+			padding: 0;
+		}
+	}
+
+	section.bye {
+		padding: 0;
+
+		h3 {
+			text-align: left;
+			padding-bottom: 0;
+		}
+	}
+}
+
+/* Rewards */
+
+#page-rewards {
+	background: #ebebeb;
+
+	.background {
+		background: #acacac;
 	}
 
 	.copy {
