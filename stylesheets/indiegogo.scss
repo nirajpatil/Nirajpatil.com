@@ -1,0 +1,142 @@
+/* Niraj Patil - Indiegogo Presentation
+-------------------------------------------------------- */
+
+body {
+	font-family: CallunaRegular, Georgia, Serif;
+	color: #fa1681;
+	text-align: center;
+	background-color: #ffffff;
+	background-size: 100%;
+}
+
+/* Symbolset */
+
+@font-face {
+  font-family: "SSStandard";
+  src: url('../fonts/ss-standard.eot');
+  src: url('../fonts/ss-standard.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/ss-standard.woff') format('woff'), 
+       url('../fonts/ss-standard.ttf')  format('truetype'),
+       url('../fonts/ss-standard.svg#SSStandard') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ss-icon, .ss-icon.ss-standard,
+[class^="ss-"]:before, [class*=" ss-"]:before,
+[class^="ss-"].ss-standard:before, [class*=" ss-"].ss-standard:before,
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"].ss-standard.right:after, [class*=" ss-"].ss-standard.right:after {
+	font-family: "SSStandard";
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-rendering: optimizeLegibility;
+	white-space: nowrap;
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Calluna */
+ 
+@font-face {
+    font-family: 'CallunaRegular';
+    src: url('../fonts/Calluna-Regular-webfont.eot');
+    src: url('../fonts/Calluna-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Calluna-Regular-webfont.woff') format('woff'),
+         url('../fonts/Calluna-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Calluna-Regular-webfont.svg#CallunaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Headings and copy
+-------------------------------------------------------- */
+
+
+small {
+	font-size: 16px;
+	line-height: 26px;
+}
+
+h1 {
+	font-size: 100px;
+	line-height: 110px;
+	font-weight: normal;
+}
+
+h1 a {
+	color: #fa1681;
+}
+
+h3 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 100px;
+}
+
+p {
+	margin-top: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fa1681;
+	text-decoration: none;
+}
+
+.content {
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.content:after { 
+	content: " ";
+	display: block; 
+	height: 0; 
+	clear: both;
+	*zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML += '<div class="ie7-clear"></div>' );
+		}
+
+.center {
+	margin-bottom: 20px;
+}
+
+nav a {
+	font-size: 30px;
+	line-height: 48px;
+}
+
+img {
+	width: 900px;
+	margin-bottom: 50px;
+	border: 1px solid #cdcdcd;
+}
+
+#page-index {
+	font-family: CallunaRegular, Georgia, Serif;
+	color: #ffffff;
+	text-align: center;
+	background: #eb1478 url(../images/presentation/index/bg-index.jpg) top center no-repeat;
+	background-size: 100%;
+
+	a {
+		color: #ffffff;
+		text-decoration: none;
+	}
+}
