@@ -148,3 +148,15 @@ iframe {
 		text-decoration: none;
 	}
 }
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+	#page-index {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+	}
+}
